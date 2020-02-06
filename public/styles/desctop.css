@@ -1,5 +1,73 @@
-/* END HEADER STYLES */
+/* ALL INDEX STYLES */
 /*#################################################################*/
 /*#################################################################*/
 /*#################################################################*/
-/* MENU STYLES */
+#allIndex {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 80vw;
+}
+menu {
+    display: flex;
+    justify-content: space-around;
+    vertical-align: top;
+    height: 2em;
+    margin-top: 5px;
+}
+#allIndex > menu > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(55, 55, 55);
+    line-height: 2em;
+    transition-duration: 500ms;
+    padding: 0 8px;
+    border-radius: 15px;
+}
+#allIndex > menu > a:hover {
+    box-shadow: 0 5px 15px rgb(55, 55, 55);
+}
+
+/* END ALL INDEX STYLES */
+/*#################################################################*/
+/*#################################################################*/
+/*#################################################################*/
+/* RIGHT NAVIGATION STYLES */
+
+#rightNavigation {
+    background-color: blue;
+    position: fixed;
+    left: 80vw;
+    top: 0;
+    height: 100vh;
+    width: 20vw;
+}
+.container {
+    position: absolute;
+    animation: gg 50s infinite;
+    transition-duration: 1s;
+}
+div.test {
+    height: 25vh;
+    border: 1px solid black;
+    width: 18vw;
+    margin-left: 1vw;
+    margin-bottom: 10px;
+    transition-duration: 500ms;
+}
+.test:hover {
+    width: 15vw;
+    height: 90px;
+}
+@keyframes gg {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: -1000px;
+    }
+    100% {
+        top: 0;
+    }
+}

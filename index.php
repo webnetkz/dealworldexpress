@@ -2,44 +2,7 @@
 
     require_once 'app/libs/debug.php';
 
-    session_start();
-    
-    // Модальное окно данных по трек номеру
-    if(!empty($_SESSION['tracking'])) {
-        echo '<div class="modal">';
-            echo '<img src="public/images/close.svg" alt="close icon" class="closeBtn" onclick="closeModal();">';
-            echo '<p class="trackNumber">Трек номер: ' . $_SESSION['tracking'] . '</p>';
-                echo '<p class="headModalLine">Дата отправки — </p> ';
-                echo '<p>' . $_SESSION['datefrom'] . ';</p><hr>';
-
-            echo '<p class="headModalLine">Город отправки — </p> ';
-            echo '<p>' . $_SESSION['townfrom'] . ';</p><hr>';
-
-            echo '<p class="headModalLine">Дата доставки — </p> ';
-            echo '<p>' . $_SESSION['dateto'] . ';</p><hr>';
-
-            echo '<p class="headModalLine">Город доставки — </p> ';
-            echo '<p>' . $_SESSION['townto'] . ';</p><hr>';
-
-            echo '<p class="headModalLine">Общий вес — </p> ';
-            echo '<p>' . $_SESSION['mass'] . ' кг.;</p><hr>';
-
-            echo '<p class="headModalLine">Количество мест — </p> ';
-            echo '<p>' . $_SESSION['mest'] . ' мест-a;</p><hr>';
-
-            echo '<p class="headModalLine">Статус — </p> ';
-            echo '<p>' . $_SESSION['status'] . ';</p><hr>';
-        echo '</div>';
-        // Удаляем временные данные трек номера
-        unset($_SESSION['tracking']);
-        unset($_SESSION['townfrom']);
-        unset($_SESSION['datefrom']);
-        unset($_SESSION['dateto']);
-        unset($_SESSION['townto']);
-        unset($_SESSION['mass']);
-        unset($_SESSION['mest']);
-        unset($_SESSION['status']);
-    }
+    require_once 'app/libs/showModalTracking.php';
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -65,29 +28,47 @@
     <link rel="manifest" href="manifest.json">
     <link rel="shortcut icon" href="public/images/miniLogo.png" type="image/png">
 
-    <title>DWE</title>
+    <title>DWE Грузоперевозки</title>
 
 </head>
 <body>
-    <header>
-        <a href="index">
-            <img src="public/images/logo.png" alt="logotype dwe dwexpress" class="logo">
-        </a>
-        <div class="headerTexts">
-            <p class="headerText">ВЫСОКАЯ СКОРОСТЬ ДОСТАВКИ</p>
-            <p class="headerText">ВЫГОДНЫЕ УСЛОВИЯ</p>
-            <p class="headerText">БЫСТРЫЙ РАСЧЕТ</p>
+    
+    <section id="allIndex">
+        <menu>
+            <a href="">Главная</a>
+            <a href="">Тарифы и сроки</a>
+            <a href="">О нас</a>
+            <a href="">Страховка</a>
+            <a href="">Контакты</a>
+        </menu>
+    </section>
+    <section id="rightNavigation">
+        <div class="container">
+            <div class="test"></div>
+            <div class="test"></div>
+            <div class="test"></div>
+            <div class="test"></div>
+            <div class="test"></div>
+            <div class="test"></div>
+            <div class="test"></div>
+            <div class="test"></div>
+            <div class="test"></div>
+            <div class="test"></div>
+            <div class="test"></div>
+            <div class="test"></div>
+            <div class="test"></div>
+            <div class="test"></div>
+            <div class="test"></div>
+            <div class="test"></div>
+            <div class="test"></div>
+            <div class="test"></div>
+            <div class="test"></div>
+            <div class="test"></div>
         </div>
-    </header>
-    <menu>
-        
-    </menu>
-<!--########################## INDEX ##############################-->
-<!--########################## INDEX ##############################-->
-<!--########################## INDEX ##############################-->
+    </section>
 
     
-
+    <script src="public/scripts/libs/hotReload.js1"></script>
     <script src="public/scripts/libs/trackingModal.js"></script>
 </body>
 </html>
