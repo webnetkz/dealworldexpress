@@ -10,23 +10,50 @@
     width: 80vw;
 }
 menu {
+    position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     vertical-align: top;
     height: 2em;
     margin-top: 5px;
+    z-index: 999;
 }
 #allIndex > menu > a {
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(55, 55, 55);
     line-height: 2em;
     transition-duration: 500ms;
     padding: 0 8px;
+    margin: 0 10px;
     border-radius: 15px;
+    background-color: rgb(19, 55, 89);
+    color: rgb(255, 255, 255)
 }
 #allIndex > menu > a:hover {
     box-shadow: 0 5px 15px rgb(55, 55, 55);
+    background-color: rgb(255, 255, 255);
+    color: rgb(19, 55, 89);
+}
+#allIndex > h1 {
+    position: relative;
+    top: 40px;
+    color: rgb(19, 55, 89);
+    font-weight: 100;
+}
+#allIndex > h2 {
+    position: relative;
+    font-size: 1em;
+    font-weight: 100;
+    top: 80px;
+    color: rgb(19, 55, 89); 
+}
+
+.copyright {
+    position: absolute;
+    top: calc(100vh - 3vh);
+    left: 37vw;
+    font-size: 0.7em;
+    z-index: 111;
 }
 
 /* END ALL INDEX STYLES */
@@ -36,38 +63,43 @@ menu {
 /* RIGHT NAVIGATION STYLES */
 
 #rightNavigation {
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     left: 80vw;
     top: 0;
     height: 100vh;
     width: 20vw;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 .container {
     position: absolute;
-    animation: gg 50s infinite;
+    animation: gg 30s infinite;
     transition-duration: 1s;
 }
 div.test {
     height: 25vh;
-    border: 1px solid black;
     width: 18vw;
     margin-left: 1vw;
     margin-bottom: 10px;
     transition-duration: 500ms;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 .test:hover {
-    width: 15vw;
-    height: 90px;
+    height: 35vh;
+    box-shadow: 0 0 3px rgb(0, 0, 0);
+}
+.container:hover {
+    animation-play-state: paused;
 }
 @keyframes gg {
     0% {
-        top: 0;
+        top: 10vh;
     }
     50% {
-        top: -1000px;
+        top: -50vh;
     }
     100% {
-        top: 0;
+        top: 10vh;
     }
 }

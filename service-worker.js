@@ -3,7 +3,7 @@ self.addEventListener('install', function(e) {
  e.waitUntil(
    caches.open('title').then(function(cache) {
      return cache.addAll([
-       '/index.html',
+       '/',
        'service-worker.js',
        'manifest.json',
        'public/styles/allStyle.css',

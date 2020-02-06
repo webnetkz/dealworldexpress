@@ -7,15 +7,15 @@
   "display": "fullscreen",
   "prefer_related_applications": false,
   "icons": [{
-    "src": "public/images/mini_logo.png",
+    "src": "public/images/miniLogo.png",
     "sizes": "48x48",
     "type": "image/png"
   }, {
-    "src": "public/images/mini_logo.png",
+    "src": "public/images/miniLogo.png",
     "sizes": "72x72",
     "type": "image/png"
   }, {
-    "src": "public/images/mini_logo.png",
+    "src": "public/images/miniLogo.png",
     "sizes": "96x96",
     "type": "image/png"
   },{
