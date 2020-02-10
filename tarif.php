@@ -8,7 +8,8 @@
 
 ?>
 
-        
+<img src="public/images/insta.jpg" alt="deal world express present" style="width: 75vw;">
+
 
     </section>
 

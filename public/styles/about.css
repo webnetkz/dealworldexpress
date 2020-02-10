@@ -1,9 +1,21 @@
 .headerAbout {
     height: 310px;
-    background: url('../images/about/headBg.png')  no-repeat;
+    background: url('../images/about/headBg.png') no-repeat;
     background-size: cover;
     box-shadow: 0 0 10px bisque;
     margin-bottom: 2em;
+    animation: linearHeadAbout 12s infinite;
+}
+@keyframes linearHeadAbout {
+    0% {
+        background-size: 150%;
+    }
+    50% {
+        background-size: 100%;
+    }
+    100% {
+        background-size: 150%;
+    }
 }
 h1 {
     color: rgb(19, 55, 89);
@@ -23,5 +35,9 @@ p {
     float: right;
 }
 .footerAbout {
+    height: 310px;
+    background: url('../images/about/sclad.png') no-repeat;
+    background-size: cover;
     box-shadow: 0 0 10px bisque;
+    animation: linearHeadAbout 12s infinite;
 }

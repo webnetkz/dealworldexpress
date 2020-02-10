@@ -40,7 +40,7 @@
 
     <?=$start?>
         <a href="index">
-            <img src="public/images/miniLogo.png" alt="logotype deal world express" class="logo">
+            <img src="public/images/newLogo.jpg" style="border-radius: 51%;" alt="logotype deal world express" class="logo">
         </a>
         <menu>
             <a href="index">Главная</a>

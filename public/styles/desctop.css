@@ -237,6 +237,15 @@ menu {
 .navSave:hover {
     transform: rotateY(360deg);
 }
+.navTarif {
+    height: 90%;
+    padding-top: 5%;
+    transition-duration: 1s;
+    border-radius: 50%;
+}
+.navTarif:hover {
+    transform: rotate(360deg);
+}
 /* END RIGHT NAVIGATION STYLES */
 /*#################################################################*/
 /*#################################################################*/

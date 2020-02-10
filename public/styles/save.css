@@ -1,9 +1,24 @@
 .headerSave {
     height: 45vh;
-    background: url('../images/save/headBg.png')  no-repeat;
+    background: url('../images/save/headBg.png') no-repeat;
     background-size: contain;
     box-shadow: 0 0 10px bisque;
     margin-bottom: 2em;
+    animation: linearHead 12s infinite;
+}
+@keyframes linearHead {
+    0% {
+        background: url('../images/save/headBg.png') -50% 0% no-repeat;
+        background-size: contain;
+    }
+    50% {
+        background: url('../images/save/headBg.png') 120% 0% no-repeat;
+        background-size: contain;
+    }
+    100% {
+        background: url('../images/save/headBg.png') -50% 0% no-repeat;
+        background-size: contain;
+    }
 }
 h1 {
     color: rgb(19, 55, 89);
@@ -47,4 +62,7 @@ p {
     font-weight: 100;
     margin-top: 8vh;
     font-size: 0.8em;
+}
+hr {
+    border-color: rgb(19, 55, 89);
 }

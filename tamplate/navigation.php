@@ -1,21 +1,25 @@
 <section id="rightNavigation">
     <div class="containerNavigation">
-        <div class="blockNavigation">
-            <a href="about">
+        <a href="about">
+            <div class="blockNavigation" title="Deal World Express">
                 <img src="public/images/miniLogo.png" alt="logotype deal world express" class="navDWE">
-            </a>
-        </div>
-        <div class="blockNavigation">
+            </div>
+        </a>
         <a href="save">
-                <img src="public/images/save/save.jpg" alt="calculator deal world express" class="navSave">
-            </a>
-        </div>
-        <div class="blockNavigation">
-            <a href="index">
+            <div class="blockNavigation" title="Сохраность посылки">
+                <img src="public/images/save/save.png" alt="calculator deal world express" class="navSave">
+            </div>
+        </a>
+        <a href="index">
+            <div class="blockNavigation" title="Расчет стоимости доставки">
                 <img src="public/images/calc.png" alt="calculator deal world express" class="navCalc">
-            </a>
-        </div>
-        <div class="blockNavigation"></div>
+            </div>
+        </a>
+        <a href="tarif">
+            <div class="blockNavigation" title="Тарифы и сроки">
+                <img src="public/images/tarif/tarif.png" alt="calculator deal world express" class="navTarif">
+            </div>
+        </a>
         <div class="blockNavigation">
 
         </div>
