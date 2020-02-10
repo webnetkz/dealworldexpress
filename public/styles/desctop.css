@@ -16,6 +16,11 @@
     top: 3px;
     z-index: 9999;
     height: 5em;
+    transition-duration: 600ms;
+}
+.logo:hover {
+    transform: scale(1.2) rotate(15deg);
+    top: 10px;
 }
 .language {
     position: fixed;
@@ -46,8 +51,9 @@ menu {
     vertical-align: top;
     height: 2.5em;
     margin-top: 1.5em;
+    margin-left: 2.5vw;
     padding: 5px 0;
-    width: 75vw;
+    width: 73vw;
     z-index: 999;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px bisque;
@@ -68,7 +74,7 @@ menu {
     background-color: rgb(255, 255, 255);
     color: rgb(19, 55, 89);
 }
-#allIndex > h1 {
+#allIndex > h1.header1 {
     position: relative;
     top: 70px;
     color: rgb(19, 55, 89);
@@ -157,12 +163,6 @@ menu {
     color: rgb(255, 255, 255);
     background-color: rgb(19, 55, 89);
 }
-.copyright {
-    left: 37vw;
-    font-size: 0.7em;
-    z-index: 1999911;
-}
-
 /* END ALL INDEX STYLES */
 /*#################################################################*/
 /*#################################################################*/
@@ -170,7 +170,7 @@ menu {
 /* RIGHT NAVIGATION STYLES */
 
 #rightNavigation {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(240, 240, 240);
     position: fixed;
     left: 75vw;
     top: 0;
@@ -190,7 +190,7 @@ menu {
     margin-left: 1vw;
     margin-bottom: 10px;
     transition-duration: 500ms;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(235, 235, 235);
     box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 .blockNavigation:hover {
@@ -219,6 +219,24 @@ menu {
 .navDWE:hover {
     transform: rotate(360deg);
 }
+.navCalc {
+    height: 90%;
+    padding-top: 5%;
+    transition-duration: 1s;
+    border-radius: 50%;
+}
+.navCalc:hover {
+    transform: rotateX(360deg);
+}
+.navSave {
+    height: 80%;
+    padding-top: 10%;
+    transition-duration: 1s;
+    border-radius: 50%;
+}
+.navSave:hover {
+    transform: rotateY(360deg);
+}
 /* END RIGHT NAVIGATION STYLES */
 /*#################################################################*/
 /*#################################################################*/
@@ -227,4 +245,10 @@ menu {
 footer {
     position: relative;
     width: 75vw;
+}
+.copyright {
+    left: 37vw;
+    font-size: 0.7em;
+    z-index: 1999911;
+    margin-top: 3em;
 }

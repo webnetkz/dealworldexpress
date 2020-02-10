@@ -3,4 +3,25 @@
     background: url('../images/about/headBg.png')  no-repeat;
     background-size: cover;
     box-shadow: 0 0 10px bisque;
+    margin-bottom: 2em;
+}
+h1 {
+    color: rgb(19, 55, 89);
+    font-weight: 100;
+    margin-bottom: 2em;
+}
+p {
+    color: rgb(19, 55, 89);
+    padding: 0 5%;
+}
+.aboutImgForText {
+    height: 300px;
+    float: left;
+}
+.aboutImgForTextOne {
+    height: 300px;
+    float: right;
+}
+.footerAbout {
+    box-shadow: 0 0 10px bisque;
 }

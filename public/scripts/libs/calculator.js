@@ -4,6 +4,8 @@ var calcData = {
     price: 4.5
 }
 
+
+
 // Выбор страны доставки
 function showCity(elem) {
     if(elem.value == 'kz') {
@@ -13,9 +15,10 @@ function showCity(elem) {
         // Выбор города доставки
         cityKZ.addEventListener('change', () => {
             calcData.city = cityKZ.value;
-
+            
             // Выбор массы посылки
             mass.addEventListener('input', () => {
+
                 let resultCalc = mass.value * calcData.price;
                 // Если город доставки не Алматы
                 if(calcData.city != 2) {

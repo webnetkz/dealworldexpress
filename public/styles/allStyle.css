@@ -20,7 +20,7 @@ html {
 }
 body {
     position: relative;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(247, 247, 247);
     text-align: center;
     overflow-x: hidden;
     animation: showContent 400ms linear;
@@ -43,5 +43,7 @@ body {
 ::-webkit-resizer { background-color: #666;}
 .hiddenText {
     font-size: 1px;
+    line-height: 1px;
+    position: absolute;
     opacity: 0;
 }
