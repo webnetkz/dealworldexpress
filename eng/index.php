@@ -13,20 +13,17 @@
         <h2>ЛЮБОЙ ВЕС, ГАРАНТИЯ, В СРОК!</h2>
 
         <form action="app/api/tracking" id="tracking" method="POST">
-            <label for="trackNum" class="hiddenText">trackNum</label>
-            <input type="text" id="trackNum" class="inp" name="numberTracking" placeholder="Трек номер" required>
+            <input type="text" class="inp" name="numberTracking" placeholder="Трек номер" required>
             <input type="submit" class="btn" name="sendTracking" value="Узнать нахождение">
         </form>
 
         <form action="" id="calculator" method="POST">
-            <label for="fromCount" class="hiddenText">from</label>
-            <select autofocus name="from" class="inp" required id="fromCount">
+            <select autofocus name="from" class="inp" required>
                 <option value="">От куда</option>
                 <option value="cn">Китай</option>
                 <option value="tr">Турция</option>
             </select>
-            <label for="toCount" class="hiddenText">to</label>
-            <select autofocus name="to" class="inp" required onchange="showCity(this);" id="toCount">
+            <select autofocus name="to" class="inp" required onchange="showCity(this);">
                 <option value="">Куда</option>
                 <option value="kz">Казахстан</option>
                 <option value="uz">Узбекистан</option>
@@ -48,7 +45,6 @@
                 <option value="11">Уральск</option>
                 <option value="12">Усть-Каменогорск</option>
             </select>
-            <label for="mass" class="hiddenText">mass</label>
             <input type="text" class="inp" name="mass" placeholder="Вес кг." id="mass" autocomplete="off">
             <p id="resCalc"></p>
         </form>

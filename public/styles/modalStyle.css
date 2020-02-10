@@ -24,6 +24,7 @@
     padding: 2% 5%;
     animation: showModal 500ms linear;
     text-align: left;
+    z-index: 99999;
 }
 .closeBtn {
     position: relative;

@@ -3,20 +3,54 @@
 /*#################################################################*/
 /*#################################################################*/
 #allIndex {
-    position: fixed;
+    position: relative;
     left: 0;
     top: 0;
-    height: 100vh;
-    width: 80vw;
+    min-height: 97vh;
+    box-sizing: border-box;
+    width: 75vw;
+}
+.logo {
+    position: fixed;
+    left: 15px;
+    top: 3px;
+    z-index: 9999;
+    height: 5em;
+}
+.language {
+    position: fixed;
+    z-index: 99999;
+    height: 2em;
+    background-color: rgb(19, 55, 89);
+    border-top-right-radius: 5px;
+    padding: 5px;
+    top: calc(100vh - 2em);
+}
+.lang {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 2px;
+    border-radius: 3px;
+    transition-duration: 800ms;
+}
+.lang:hover {
+    color: rgb(19, 55, 89);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(255, 255, 255);
 }
 menu {
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: center;
     vertical-align: top;
-    height: 2em;
-    margin-top: 5px;
+    height: 2.5em;
+    margin-top: 1.5em;
+    padding: 5px 0;
+    width: 75vw;
     z-index: 999;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px bisque;
 }
 #allIndex > menu > a {
     text-decoration: none;
@@ -36,7 +70,7 @@ menu {
 }
 #allIndex > h1 {
     position: relative;
-    top: 40px;
+    top: 70px;
     color: rgb(19, 55, 89);
     font-weight: 100;
 }
@@ -44,16 +78,89 @@ menu {
     position: relative;
     font-size: 1em;
     font-weight: 100;
-    top: 80px;
+    top: 100px;
     color: rgb(19, 55, 89); 
 }
-
-.copyright {
+#tracking {
     position: absolute;
-    top: calc(100vh - 3vh);
+    top: 40vh;
+    left: 5vw;
+    height: 20vh;
+    width: 25vw;
+    z-index: 111;
+}
+#tracking > input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1.2em;
+    padding: 4px;
+    border-radius: 30px;
+    outline: none;
+    color: rgb(19, 55, 89);
+    text-align: center;
+    transition-duration: 500ms;
+}
+.inp {
+    border: 2px solid rgb(255, 251, 7);
+    background-color: rgb(255, 255, 230);
+}
+.btn {
+    border: none;
+    background-color: rgb(255, 251, 7);
+}
+#tracking > input:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 5px black;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 55, 89);
+}
+#tracking > input:focus {
+    transform: scale(1.2);
+    box-shadow: 0 0 5px black;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 55, 89);
+}
+#calculator {
+    position: absolute;
+    top: 40vh;
+    left: 35vw;
+    height: 30vh;
+    width: 30vw;
+    z-index: 111;
+}
+#calculator > input, select {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1.2em;
+    padding: 4px;
+    border-radius: 30px;
+    outline: none;
+    color: rgb(19, 55, 89);
+    text-align: center;
+    transition-duration: 500ms;
+}
+#calculator > input:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 5px black;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 55, 89);
+}
+#calculator > input:focus {
+    transform: scale(1.2);
+    box-shadow: 0 0 5px black;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 55, 89);
+}
+.copyright {
     left: 37vw;
     font-size: 0.7em;
-    z-index: 111;
+    z-index: 1999911;
 }
 
 /* END ALL INDEX STYLES */
@@ -65,31 +172,32 @@ menu {
 #rightNavigation {
     background-color: rgb(255, 255, 255);
     position: fixed;
-    left: 80vw;
+    left: 75vw;
     top: 0;
     height: 100vh;
-    width: 20vw;
+    width: 25vw;
     box-shadow: 0 0 10px rgb(0, 0, 0);
+    z-index: 9999;
 }
-.container {
+.containerNavigation {
     position: absolute;
     animation: gg 30s infinite;
     transition-duration: 1s;
 }
-div.test {
+.blockNavigation {
     height: 25vh;
-    width: 18vw;
+    width: 23vw;
     margin-left: 1vw;
     margin-bottom: 10px;
     transition-duration: 500ms;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgb(0, 0, 0);
 }
-.test:hover {
+.blockNavigation:hover {
     height: 35vh;
     box-shadow: 0 0 3px rgb(0, 0, 0);
 }
-.container:hover {
+.containerNavigation:hover {
     animation-play-state: paused;
 }
 @keyframes gg {
@@ -102,4 +210,21 @@ div.test {
     100% {
         top: 10vh;
     }
+}
+.navDWE {
+    height: 90%;
+    padding-top: 5%;
+    transition-duration: 1s;
+}
+.navDWE:hover {
+    transform: rotate(360deg);
+}
+/* END RIGHT NAVIGATION STYLES */
+/*#################################################################*/
+/*#################################################################*/
+/*#################################################################*/
+/* FOOTER STYLES */
+footer {
+    position: relative;
+    width: 75vw;
 }
