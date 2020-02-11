@@ -28,7 +28,6 @@
     <link rel="stylesheet" href="public/styles/allStyle.css">
     <link rel="stylesheet" href="public/styles/desctop.css">
     <link rel="stylesheet" href="public/styles/mobile.css">
-    <link rel="stylesheet" href="public/styles/wave.css">
     <link rel="stylesheet" href="public/styles/modalStyle.css">
     <link rel="stylesheet" href="<?=$linkCSS?>">
     <link rel="manifest" href="manifest.json">
@@ -40,17 +39,17 @@
 
     <?=$start?>
         <a href="index">
-            <img src="public/images/newLogo.jpg" alt="logotype deal world express" class="logo">
+            <img src="public/images/miniLogo.png" alt="logotype deal world express" class="logo">
         </a>
         <menu>
             <a href="index">Главная</a>
             <a href="tarif">Тарифы и сроки</a>
             <a href="about">О нас</a>
-            <a href="save">Страховка</a>
+            <a href="save">Страхование</a>
             <a href="contact">Контакты</a>
         </menu>
         <div class="language">
-            <a href="index" class="lang">RU</a>
+            <a href="index" class="lang activeLang">RU</a>
             <a href="eng/index" class="lang">ENG</a>
             <a href="cn/index" class="lang">CN</a>
         </div>

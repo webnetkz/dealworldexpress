@@ -46,7 +46,7 @@
         </menu>
         <div class="language">
             <a href="../index" class="lang">RU</a>
-            <a href="eng/index" class="lang">ENG</a>
+            <a href="eng/index" class="lang activeLang">ENG</a>
             <a href="cn/index" class="lang">CN</a>
         </div>
 

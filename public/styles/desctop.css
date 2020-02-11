@@ -9,6 +9,7 @@
     min-height: 97vh;
     box-sizing: border-box;
     width: 75vw;
+    margin-bottom: 5vh;
 }
 .logo {
     position: fixed;
@@ -19,7 +20,6 @@
     transition-duration: 600ms;
     border-radius: 51%;
     border: 3px solid white;
-    box-shadow: -15px 0px 30px rgb(165, 154, 154);
 
 }
 .logo:hover {
@@ -34,16 +34,24 @@
     border-top-right-radius: 5px;
     padding: 5px;
     top: calc(100vh - 2em);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
 }
 .lang {
     text-decoration: none;
     color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 255, 255);
     padding: 2px;
+    padding-bottom: 1px;
     border-radius: 3px;
     transition-duration: 800ms;
 }
 .lang:hover {
+    color: rgb(19, 55, 89);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+.activeLang {
     color: rgb(19, 55, 89);
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 5px rgb(255, 255, 255);
@@ -256,12 +264,63 @@ menu {
 /*#################################################################*/
 /* FOOTER STYLES */
 footer {
+    display: flex;
+    justify-content: space-between;
     position: relative;
     width: 75vw;
+    background-color: rgb(19, 55, 89);
+    height: 30vh;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+.footerBlock {
+    flex: 1;
+    padding: 10px;
+}
+.footerBlock > p {
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    margin-bottom: 1.5em;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.navItem {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 0.8em;
+    transition-duration: 500ms;
+    padding: 3px;
+}
+.navItem:hover {
+    color: rgb(19, 55, 89);
+    background-color: rgb(247, 247, 247);
+}
+.footerLogo {
+    text-align: center;
+    height: 8vh;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-top: 13vh;
+    margin-bottom: 2vh;
+}
+.footerContact {
+    line-height: 4vh;
+    text-align: left;
+    font-size: 0.8em;
+}
+.footerPhone {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.footerIcon {
+    vertical-align: middle;
+    margin-right: 5px;
+    height: 4vh;
 }
 .copyright {
-    left: 37vw;
+    color: rgb(255, 255, 255);
     font-size: 0.7em;
-    z-index: 1999911;
-    margin-top: 3em;
 }

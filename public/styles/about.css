@@ -34,10 +34,3 @@ p {
     height: 300px;
     float: right;
 }
-.footerAbout {
-    height: 310px;
-    background: url('../images/about/sclad.png') no-repeat;
-    background-size: cover;
-    box-shadow: 0 0 10px bisque;
-    animation: linearHeadAbout 12s infinite;
-}
