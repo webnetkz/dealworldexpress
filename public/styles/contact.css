@@ -1,0 +1,14 @@
+.contactContainer {
+    display: flex;
+}
+.contactBlock {
+    flex: 1;
+    height: 35vh;
+    padding: 20px;
+    padding-top: 10vh;
+}
+.contactPhone {
+    color: rgb(19, 55, 89);
+    text-decoration: none;
+    font-size: 1.5em;
+}
