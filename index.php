@@ -7,21 +7,28 @@
     require_once 'tamplate/navigation.php';
 
 ?>
+        <style>
+            html, body {
+                overflow: hidden;
+            }
+        </style>
 
         <h1 class="header1">ЭКОНОМИЧНАЯ И НАДЕЖНАЯ ДОСТАВКА ИЗ КИТАЯ</h1>
         <h2>В РОССИЮ, КАЗАХСТАН, СТРАНЫ ЕС, АМЕРИКА И КАНАДА, УЗБЕКИСТАН И УКРАИНА</h2>
         <h2>ЛЮБОЙ ВЕС, ГАРАНТИЯ, В СРОК!</h2>
 
         <form action="app/api/tracking" id="tracking" method="POST">
+        <label for="tracking" class="label">Отслеживание посылки</label>
             <label for="trackNum" class="hiddenText">trackNum</label>
             <input type="text" id="trackNum" class="inp" name="numberTracking" placeholder="Трек номер" required>
             <input type="submit" class="btn" name="sendTracking" value="Узнать нахождение">
         </form>
 
-        <form action="" id="calculator" method="POST">
+        <form  id="calculator" method="POST">
+            <label for="calculator" class="label">Калькулятор стоимости доставки</label>
             <label for="fromCount" class="hiddenText">from</label>
             <select autofocus name="from" class="inp" required id="fromCount">
-                <option value="">От куда</option>
+                <option value="">Откуда</option>
                 <option value="cn">Китай</option>
                 <option value="tr">Турция</option>
             </select>
@@ -51,10 +58,49 @@
             <label for="mass" class="hiddenText">mass</label>
             <input type="text" class="inp" name="mass" placeholder="Вес кг." id="mass" autocomplete="off">
             <p id="resCalc"></p>
+            <p>*Данный расчёт является ориентировочным.</p>
+            <!--<p>Важно! Если объемный вес посылки превышает фактический в 2 раза и более, расчетный вес определяется по формуле: (объемный вес - фактический) / 2 + фактический вес. Данная формула просчета стоимости доставки распространяется на все виды доставки.</p>-->
         </form>
 
+        <button name="zakaz" class="zakaz" id="zakaz">Заказать доставку</button>
+
+            <div id="modalInfo">
+                <span class="closeInfo"></span>
+                <h1>Заявка на доставку</h1>
+
+                <form action="" method="POST">
+                    <div class="oneZakaz">
+                        <p>Отправитель</p>
+                        <input type="text" class="inpInfo" placeholder="Компания отправитель" id="sendCompany">
+                        <p>
+                            <input type="checkbox" name="fizLic" id="fizLic">
+                            Физическое лицо
+                        </p>
+                        <input type="text" class="inpInfo" placeholder="Контактное лицо отправителя">
+                        <input type="text" class="inpInfo" placeholder="Город отправителя">
+                        <input type="text" class="inpInfo" placeholder="Адрес отправителя">
+                        <input type="text" class="inpInfo" placeholder="Телефон отправителя">
+                        <input type="date" class="inpInfo" placeholder="Дата забора">
+                    </div>
+                    <div class="twoZakaz">
+                        <p>Получатель</p>
+                        <input type="text" class="inpInfo" placeholder="Компания получатель">
+                        <input type="text" class="inpInfo" placeholder="Контактное лицо получателя">
+                        <input type="text" class="inpInfo" placeholder="Город получателя">
+                        <input type="text" class="inpInfo" placeholder="Адрес получателя">
+                        <input type="text" class="inpInfo" placeholder="Телефон получателя">
+                        <input type="text" class="inpInfo" placeholder="Общий вес">
+                        <input type="text" class="inpInfo" placeholder="Объявленная ценность">
+                        <input type="text" class="inpInfo" placeholder="Количество">
+                        <input type="text" class="inpInfo" placeholder="Вложение">
+                    </div>
+                    <p>
+                        <input type="submit" class="zakaz" name="sendZakaz" value="Обработать заказ">
+                    </p>
+                </form>
+            </div>
     </section>
 
 <?php
-    require_once 'tamplate/footer.php';
+    require_once 'tamplate/footerIndex.php';
 ?>

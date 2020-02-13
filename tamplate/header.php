@@ -39,14 +39,15 @@
 
     <?=$start?>
         <a href="index">
-            <img src="public/images/miniLogo.png" alt="logotype deal world express" class="logo">
+            <img src="public/images/whiteMiniLogo.svg" alt="logotype deal world express" class="logo">
         </a>
         <menu>
-            <a href="index">Главная</a>
-            <a href="tarif">Тарифы и сроки</a>
-            <a href="about">О нас</a>
-            <a href="save">Страхование</a>
-            <a href="contact">Контакты</a>
+            <a href="index" name="menuItem">Главная</a>
+            <a href="tarif" name="menuItem">Тарифы и сроки</a>
+            <a href="about" name="menuItem">О нас</a>
+            <a href="save" name="menuItem">Страхование</a>
+            <a href="contact" name="menuItem">Контакты</a>
+            <a href="https://home.courierexe.ru/290/" name="menuItem">Войти</a>
         </menu>
         <div class="language">
             <a href="index" class="lang activeLang">RU</a>

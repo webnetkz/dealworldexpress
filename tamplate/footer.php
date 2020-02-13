@@ -8,6 +8,7 @@
                 <a href="about" class="navItem">О нас</a>
                 <a href="save" class="navItem">Страхование</a>
                 <a href="contact" class="navItem">Контакты</a>
+                <a href="https://home.courierexe.ru/290/" class="navItem">Войти</a>
             </nav>
         </div>
         <div class="footerBlock">

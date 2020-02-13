@@ -14,13 +14,13 @@
     position: absolute;
     box-sizing: border-box;
     top: 10%;
-    left: 25%;
-    width: 50%;
+    left: 12.5vw;
+    width: 50vw;
     transition-duration: 500ms;
     border: 1px solid rgb(194, 194, 194);
     box-shadow: 0 0 10px rgb(0, 0, 0);
     border-radius: 10px;
-    background-image: linear-gradient(rgb(255, 255, 240), rgb(5, 171, 255));
+    background-image: linear-gradient(rgb(255, 255, 240), rgb(235, 235, 235));
     padding: 2% 5%;
     animation: showModal 500ms linear;
     text-align: left;

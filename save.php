@@ -8,7 +8,14 @@
     require_once 'tamplate/navigation.php';
 
 ?>
-        <div class="headerSave"></div>
+        <pre>
+
+
+
+
+
+    
+        </pre>
 
         <h1>CТРАХОВКА И ОТВЕТСТВЕННОСТЬ</h1>
         <p><b>Страхование посылок</b> - это гарантия безопасной перевозки Ваших товаров.</p>

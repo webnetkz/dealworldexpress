@@ -8,8 +8,15 @@
     require_once 'tamplate/navigation.php';
 
 ?>
-    <div class="headerAbout"></div>
-        
+    <pre>
+
+
+
+
+
+    
+    </pre>
+    
     <h1>Deal World Express</h1>
     <p><b>DWExpress</b> предлагает Вам услуги по международной перевозке посылок с товарами интернет-торговли, а также грузов разных весовых категорий и габаритов.</p>
         <br>

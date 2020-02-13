@@ -6,10 +6,20 @@
     position: relative;
     left: 0;
     top: 0;
-    min-height: 97vh;
+    height: 100vh;
     box-sizing: border-box;
     width: 75vw;
     margin-bottom: 5vh;
+}
+p {
+    color: rgb(19, 55, 89);
+}
+.logoBg {
+    position: fixed;
+    left: 2vw;
+    top: 45vh;
+    height: 50vw;
+    opacity: 0.1;
 }
 .logo {
     position: fixed;
@@ -18,8 +28,6 @@
     z-index: 9999;
     height: 5em;
     transition-duration: 600ms;
-    border-radius: 51%;
-    border: 3px solid white;
 
 }
 .logo:hover {
@@ -88,20 +96,21 @@ menu {
 }
 #allIndex > h1.header1 {
     position: relative;
-    top: 70px;
+    top: 20vh;
     color: rgb(19, 55, 89);
     font-weight: 100;
+    font-size: 2em;
 }
 #allIndex > h2 {
     position: relative;
     font-size: 1em;
     font-weight: 100;
-    top: 100px;
+    top: 25vh;
     color: rgb(19, 55, 89); 
 }
 #tracking {
     position: absolute;
-    top: 40vh;
+    top: 45vh;
     left: 5vw;
     height: 20vh;
     width: 25vw;
@@ -118,10 +127,15 @@ menu {
     color: rgb(19, 55, 89);
     text-align: center;
     transition-duration: 500ms;
+    border: 2px solid rgb(255, 251, 7);
 }
 .inp {
     border: 2px solid rgb(255, 251, 7);
     background-color: rgb(255, 255, 230);
+    color: rgb(19, 55, 89);
+}
+select {
+    color: rgb(19, 55, 89);
 }
 .btn {
     border: none;
@@ -143,7 +157,7 @@ menu {
 }
 #calculator {
     position: absolute;
-    top: 40vh;
+    top: 45vh;
     left: 35vw;
     height: 30vh;
     width: 30vw;
@@ -175,6 +189,9 @@ menu {
     color: rgb(255, 255, 255);
     background-color: rgb(19, 55, 89);
 }
+.label {
+    color: rgb(19, 55, 89);
+}
 /* END ALL INDEX STYLES */
 /*#################################################################*/
 /*#################################################################*/
@@ -182,7 +199,7 @@ menu {
 /* RIGHT NAVIGATION STYLES */
 
 #rightNavigation {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(19, 55, 89);
     position: fixed;
     left: 75vw;
     top: 0;
@@ -190,11 +207,15 @@ menu {
     width: 25vw;
     box-shadow: 0 0 10px rgb(0, 0, 0);
     z-index: 9999;
+    overflow-y: auto;
 }
 .containerNavigation {
     position: absolute;
     animation: gg 30s infinite;
     transition-duration: 1s;
+}
+.containerNavigation:hover {
+    animation: none;
 }
 .blockNavigation {
     height: 25vh;
@@ -223,40 +244,43 @@ menu {
         top: 10vh;
     }
 }
-.navDWE {
-    height: 90%;
-    padding-top: 5%;
-    transition-duration: 1s;
-}
-.navDWE:hover {
-    transform: rotate(360deg);
-}
 .navCalc {
-    height: 90%;
-    padding-top: 5%;
-    transition-duration: 1s;
-    border-radius: 50%;
-}
-.navCalc:hover {
-    transform: rotateX(360deg);
+    height: 25vh;
+    background: url('../images/navigation/calc.jpg') no-repeat;
+    background-size: cover;
 }
 .navSave {
-    height: 80%;
-    padding-top: 10%;
-    transition-duration: 1s;
-    border-radius: 50%;
-}
-.navSave:hover {
-    transform: rotateY(360deg);
+    height: 25vh;
+    background: url('../images/navigation/save.png') 50% 50% no-repeat;
+    background-size: cover;
 }
 .navTarif {
-    height: 90%;
-    padding-top: 5%;
-    transition-duration: 1s;
-    border-radius: 50%;
+    height: 25vh;
+    background: url('../images/navigation/tarif.webp') 50% 50% no-repeat;
+    background-size: cover;
 }
-.navTarif:hover {
-    transform: rotate(360deg);
+.navTrack {
+    height: 25vh;
+    background: url('../images/navigation/navTrack.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+.navDWE {
+    height: 25vh;
+    background: url('../images/navigation/navDWE.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+.navText {
+    position: relative;
+    text-decoration-line: none;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    width: 70%;
+    left: 30%;
+    top: 75%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 1px solid rgb(30, 136, 229);
+    text-transform: uppercase;
 }
 /* END RIGHT NAVIGATION STYLES */
 /*#################################################################*/
@@ -269,7 +293,7 @@ footer {
     position: relative;
     width: 75vw;
     background-color: rgb(19, 55, 89);
-    height: 30vh;
+    height: 33vh;
     box-shadow: 0 0 10px rgb(0, 0, 0);
     box-sizing: border-box;
 }
@@ -305,6 +329,7 @@ nav {
     border-radius: 50%;
     margin-top: 13vh;
     margin-bottom: 2vh;
+    animation: footerLogo 5s infinite;
 }
 .footerContact {
     line-height: 4vh;
@@ -323,4 +348,105 @@ nav {
 .copyright {
     color: rgb(255, 255, 255);
     font-size: 0.7em;
+}
+@keyframes footerLogo {
+    0% {
+        margin-top: 13vh;
+    }
+    40% {
+        margin-top: 8vh;
+    }
+    60% {
+        margin-top: 13vh;
+    }
+    90% {
+        margin-top: 10vh;
+    }
+    100% {
+        margin-top: 13vh;
+    }
+}
+
+/* END FOOTER STYLES */
+/*#################################################################*/
+/*#################################################################*/
+/*#################################################################*/
+/* MODAL INFO STYLES */
+.zakaz {
+    position: absolute;
+    top: 70vh;
+    left: 10vw;
+    z-index: 111;
+    margin: 10px 0;
+    font-size: 1.4em;
+    padding: 9px;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: 0 0 5px black;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 55, 89);
+    text-align: center;
+    transition-duration: 500ms;
+}
+.zakaz:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px black;
+    border: 2px solid rgb(19, 55, 89);
+    color: rgb(19, 55, 89);
+    background-color: rgb(255, 255, 255);
+}
+#modalInfo {
+    position: absolute;
+    left: -75vw;
+    top: 0;
+    height: 100vh;
+    width: 75vw;
+    box-sizing: border-box;
+    padding: 5vw;
+    background-color: rgb(247, 247, 247);
+    z-index: 999999999999;
+    transition-duration: 500ms;
+}
+#modalInfo > h1 {
+    color: rgb(19, 55, 89);
+    margin-bottom: 2em;
+}
+.closeInfo {
+    position: absolute;
+    left: 65vw;
+    top: 1vh;
+    height: 64px;
+    width: 64px;
+    background: url('../images/back.png');
+}
+.closeInfo:hover {
+    cursor: pointer;
+}
+.oneZakaz {
+    vertical-align: top;
+    display: inline-block;
+    width: 45%;
+}
+.twoZakaz {
+    vertical-align: top;
+    display: inline-block;
+    width: 45%;
+}
+.inpInfo {
+    display: block;
+    margin: 4px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 3px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(30, 136, 229);
+    transition-duration: 700ms;
+}
+.inpInfo:focus {
+    box-shadow: 0 0 5px rgb(30, 136, 229);
 }
