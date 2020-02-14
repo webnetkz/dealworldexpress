@@ -7,7 +7,7 @@
         zakaz.addEventListener('click', () => {
             modalInfo.style.left = '0px';
         });
-        
+
         let closeZakaz = document.querySelector('.closeInfo');
         closeZakaz.addEventListener('click', () => {
             modalInfo.style.left = '-75vw';
@@ -19,7 +19,7 @@
         let fizLic = document.getElementById('fizLic');
         fizLic.addEventListener('click', () => {
             let sendCompany = document.getElementById('sendCompany');
-            sendCompany.value = 'Физ. лицо';
+            sendCompany.value = 'Физ. Лицо';
         });
     </script>
 </body>

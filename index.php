@@ -68,31 +68,32 @@
                 <span class="closeInfo"></span>
                 <h1>Заявка на доставку</h1>
 
-                <form action="" method="POST">
+                <form action="app/api/zakaz" method="POST">
                     <div class="oneZakaz">
                         <p>Отправитель</p>
-                        <input type="text" class="inpInfo" placeholder="Компания отправитель" id="sendCompany">
+                        <input type="text" class="inpInfo" placeholder="Компания отправитель" id="sendCompany" required name="fromCompany">
                         <p>
                             <input type="checkbox" name="fizLic" id="fizLic">
                             Физическое лицо
                         </p>
-                        <input type="text" class="inpInfo" placeholder="Контактное лицо отправителя">
-                        <input type="text" class="inpInfo" placeholder="Город отправителя">
-                        <input type="text" class="inpInfo" placeholder="Адрес отправителя">
-                        <input type="text" class="inpInfo" placeholder="Телефон отправителя">
-                        <input type="date" class="inpInfo" placeholder="Дата забора">
+                        <input type="text" class="inpInfo" placeholder="Контактное лицо отправителя" required name="fromFIO">
+                        <input type="text" class="inpInfo" placeholder="Город отправителя" required name="fromCity">
+                        <input type="text" class="inpInfo" placeholder="Адрес отправителя" required name="fromAdres">
+                        <input type="text" class="inpInfo" placeholder="Телефон отправителя" required name="fromPhone">
+                        <input type="date" class="inpInfo" placeholder="Дата забора" required name="fromDate">
                     </div>
                     <div class="twoZakaz">
                         <p>Получатель</p>
-                        <input type="text" class="inpInfo" placeholder="Компания получатель">
-                        <input type="text" class="inpInfo" placeholder="Контактное лицо получателя">
-                        <input type="text" class="inpInfo" placeholder="Город получателя">
-                        <input type="text" class="inpInfo" placeholder="Адрес получателя">
-                        <input type="text" class="inpInfo" placeholder="Телефон получателя">
-                        <input type="text" class="inpInfo" placeholder="Общий вес">
-                        <input type="text" class="inpInfo" placeholder="Объявленная ценность">
-                        <input type="text" class="inpInfo" placeholder="Количество">
-                        <input type="text" class="inpInfo" placeholder="Вложение">
+                        <input type="text" class="inpInfo" placeholder="Компания получатель" required name="toCompany">
+                        <input type="text" class="inpInfo" placeholder="Контактное лицо получателя" required name="toFIO">
+                        <input type="text" class="inpInfo" placeholder="Город получателя" required name="toCity">
+                        <input type="text" class="inpInfo" placeholder="Адрес получателя" required name="toAdres">
+                        <input type="text" class="inpInfo" placeholder="Телефон получателя" required name="toPhone">
+                        <input type="text" class="inpInfo" placeholder="Почтовый индекс" required name="toIndex">
+                        <input type="text" class="inpInfo" placeholder="Общий вес" required name="toMass">
+                        <input type="text" class="inpInfo" placeholder="Объявленная ценность" required name="toPrice">
+                        <input type="text" class="inpInfo" placeholder="Количество" required name="toItems">
+                        <input type="text" class="inpInfo" placeholder="Вложение" required name="toToItems">
                     </div>
                     <p>
                         <input type="submit" class="zakaz" name="sendZakaz" value="Обработать заказ">
