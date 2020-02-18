@@ -4,6 +4,8 @@
 
     require_once 'app/libs/showModalTracking.php';
 
+    require_once 'app/libs/showModalInfo.php';
+
     if(empty($linkCSS)) {
         $linkCSS = null;
     }
@@ -39,7 +41,7 @@
 
     <?=$start?>
         <a href="index">
-            <img src="public/images/whiteMiniLogo.svg" alt="logotype deal world express" class="logo">
+            <img src="public/images/newLogo.svg" alt="logotype deal world express" class="logo">
         </a>
         <menu>
             <a href="index" name="menuItem">Главная</a>

@@ -49,6 +49,8 @@ if(!empty($xml->order)) {
     $_SESSION['mass'] = (string)$xml->order->weight;
     $_SESSION['mest'] = (string)$xml->order->quantity;
     $_SESSION['status'] = (string)$xml->order->status;
+} else {
+    $_SESSION['msg'] = 'Трек номер не найден';
 }
 header('Location: ../../index');
 

@@ -35,6 +35,7 @@ p {
     top: 10px;
 }
 .language {
+    display: none;
     position: fixed;
     z-index: 99999;
     height: 2em;
@@ -293,7 +294,7 @@ footer {
     position: relative;
     width: 75vw;
     background-color: rgb(19, 55, 89);
-    height: 33vh;
+    height: 35vh;
     box-shadow: 0 0 10px rgb(0, 0, 0);
     box-sizing: border-box;
 }
@@ -316,7 +317,7 @@ nav {
     text-decoration: none;
     font-size: 0.8em;
     transition-duration: 500ms;
-    padding: 3px;
+    padding: 1px;
 }
 .navItem:hover {
     color: rgb(19, 55, 89);
@@ -449,4 +450,36 @@ nav {
 }
 .inpInfo:focus {
     box-shadow: 0 0 5px rgb(30, 136, 229);
+}
+/* END MODAL INFO STYLES */
+/*#################################################################*/
+/*#################################################################*/
+/*#################################################################*/
+/* CALLBACK BLOCK*/
+.callBackIcon {
+    position: fixed;
+    left: 0;
+    top: 80vh;
+    height: 3em;
+    padding: 3px;
+    background-color: rgb(255, 255, 255);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 0 10px black;
+    transition-duration: 600ms;
+    animation: phone 1s infinite;
+    z-index: 9999999999;    
+}
+.callBackIcon:hover {
+    animation: none;  
+    padding-left: 10px;
+    transform: scale(1.3);
+}
+@keyframes phone {
+    50% {
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
 }

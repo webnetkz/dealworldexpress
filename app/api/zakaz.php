@@ -26,6 +26,9 @@ if( !empty($_POST['sendZakaz']) ) {
         $fromDate = htmlspecialchars($_POST['fromDate']);
         $fromDate = trim($fromDate);
 
+        $fromEmail = htmlspecialchars($_POST['fromEmail']);
+        $fromEmail = trim($fromEmail);
+
         // To data inputs
         $toCompany = htmlspecialchars($_POST['toCompany']);
         $toCompany = trim($toCompany);
@@ -129,18 +132,21 @@ curl_setopt($url, CURLOPT_POSTFIELDS, $request);
 // Получение ответа в виде XML
 $response = curl_exec($url);
 
-//$xml = simplexml_load_string($response);
-/*if(!empty($xml->order)) {
-    $_SESSION['tracking'] = (string)$xml->order['orderno'];
-    $_SESSION['datefrom'] = (string)$xml->order->sender->date;
-    $_SESSION['townfrom'] = (string)$xml->order->sender->town;
-    $_SESSION['dateto'] = (string)$xml->order->receiver->town;
-    $_SESSION['townto'] = (string)$xml->order->receiver->town;
-    $_SESSION['mass'] = (string)$xml->order->weight;
-    $_SESSION['mest'] = (string)$xml->order->quantity;
-    $_SESSION['status'] = (string)$xml->order->status;
+$xml = simplexml_load_string($response);
+/*
+if(!empty($xml)) {
+  echo  (string)$xml->createorder['orderno'];
 }
 */
+
+$_SESSION['t'] = (string)$xml->createorder['orderno'];
+$_SESSION['email'] = $fromEmail;
+
+
+require_once '../libs/mail.php';
+
+
+$_SESSION['msg'] = 'Ваш трек номер: ' . $_SESSION['t'] . '<br> Трек номер отправлен на указаную Вами почту.';
 header('Location: ../../index');
 // Завершения соединения через CURL
 curl_close($url);

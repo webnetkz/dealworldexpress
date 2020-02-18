@@ -13,6 +13,10 @@
             }
         </style>
 
+        <!--<div class="callBack">
+            <img src="public/images/icons/contact.png" alt="phone icon" class="callBackIcon">
+        </div>-->
+
         <h1 class="header1">ЭКОНОМИЧНАЯ И НАДЕЖНАЯ ДОСТАВКА ИЗ КИТАЯ</h1>
         <h2>В РОССИЮ, КАЗАХСТАН, СТРАНЫ ЕС, АМЕРИКА И КАНАДА, УЗБЕКИСТАН И УКРАИНА</h2>
         <h2>ЛЮБОЙ ВЕС, ГАРАНТИЯ, В СРОК!</h2>
@@ -20,7 +24,7 @@
         <form action="app/api/tracking" id="tracking" method="POST">
         <label for="tracking" class="label">Отслеживание посылки</label>
             <label for="trackNum" class="hiddenText">trackNum</label>
-            <input type="text" id="trackNum" class="inp" name="numberTracking" placeholder="Трек номер" required>
+            <input type="text" id="trackNum" class="inp" name="numberTracking" placeholder="Трек номер" required autocomplete="off">
             <input type="submit" class="btn" name="sendTracking" value="Узнать нахождение">
         </form>
 
@@ -81,6 +85,7 @@
                         <input type="text" class="inpInfo" placeholder="Адрес отправителя" required name="fromAdres">
                         <input type="text" class="inpInfo" placeholder="Телефон отправителя" required name="fromPhone">
                         <input type="date" class="inpInfo" placeholder="Дата забора" required name="fromDate">
+                        <input type="email" class="inpInfo" placeholder="Почтовый адрес" required name="fromEmail">
                     </div>
                     <div class="twoZakaz">
                         <p>Получатель</p>

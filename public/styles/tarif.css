@@ -1,0 +1,96 @@
+menu {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    height: 2.5em;
+    margin-top: 1.5em;
+    margin-left: 2.5vw;
+    padding: 5px 0;
+    width: 73vw;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px bisque;
+}
+#tarif > menu > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 2em;
+    transition-duration: 500ms;
+    padding: 0 8px;
+    margin: 0 10px;
+    border-radius: 15px;
+    background-color: rgb(19, 55, 89);
+    color: rgb(255, 255, 255)
+}
+#tarif > menu > a:hover {
+    box-shadow: 0 5px 15px rgb(55, 55, 55);
+    background-color: rgb(255, 255, 255);
+    color: rgb(19, 55, 89);
+}
+#tarif {
+    height: 130vh;
+    position: relative;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    width: 75vw;
+    margin-bottom: 5vh;
+}
+h1 {
+    color: rgb(19, 55, 89);
+    font-weight: 100;
+    margin-bottom: 2em;
+}
+h3 {
+    color: rgb(19, 55, 89);
+    font-weight: 100;
+    margin-bottom: 2em;
+}
+p {
+    color: rgb(19, 55, 89);
+    padding: 0 5%;
+}
+.containerCart {
+    height: 50vh;
+    padding: 20px;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+.cartSave {
+    border: 1px solid rgb(230, 216, 216);
+    height: 45vh;
+    width: 18%;
+    box-shadow: 0 0 5px rgb(150, 130, 130);
+    transition-duration: 500ms;
+    padding: 20px 5px;
+}
+.cartSave:hover {
+    box-shadow: 0 0 15px rgb(150, 130, 130);
+    transform: scale(1.1) scaleY(1.1);
+}
+.cartSave:hover > hr {
+    transform: rotate(-10deg);
+}
+.cartSave:hover > .procent {
+    font-weight: 900;
+}
+.procent {
+    color: rgb(19, 55, 89);
+    text-align: center;
+    font-size: 1.5em;
+}
+.priceSave {
+    font-weight: 100;
+    margin-top: 10vh;
+    font-size: 1.2;
+}
+hr {
+    margin-top: 5vh;
+    transform: rotate(10deg);
+    transition-duration: 600ms;
+}
+.textTarif {
+    text-align: left;
+}
