@@ -85,7 +85,7 @@
                         <input type="text" class="inpInfo" placeholder="Адрес отправителя" required name="fromAdres">
                         <input type="text" class="inpInfo" placeholder="Телефон отправителя" required name="fromPhone">
                         <input type="date" class="inpInfo" placeholder="Дата забора" required name="fromDate">
-                        <input type="email" class="inpInfo" placeholder="Почтовый адрес" required name="fromEmail">
+                        <input type="email" class="inpInfo" placeholder="E-mail" required name="fromEmail">
                     </div>
                     <div class="twoZakaz">
                         <p>Получатель</p>
