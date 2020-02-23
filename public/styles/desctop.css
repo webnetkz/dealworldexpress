@@ -65,6 +65,9 @@ p {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 5px rgb(255, 255, 255);
 }
+.mobileMenu {
+    display: none;
+}
 menu {
     position: fixed;
     display: flex;

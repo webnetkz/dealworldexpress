@@ -43,6 +43,9 @@
         <a href="index">
             <img src="public/images/newLogo.svg" alt="logotype deal world express" class="logo">
         </a>
+        <div class="mobileMenu">
+            menu
+        </div>
         <menu>
             <a href="index" name="menuItem">Главная</a>
             <a href="tarif" name="menuItem">Тарифы и сроки</a>

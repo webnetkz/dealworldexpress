@@ -29,6 +29,18 @@
             let sendCompany = document.getElementById('sendCompany');
             sendCompany.value = 'Физ. Лицо';
         });
+
+
+
+
+                 // 
+        let btnMobileMenu = document.querySelector('.mobileMenu');
+        btnMobileMenu.addEventListener('click', () => {
+            let menuX = document.querySelector('menu');
+            menuX.style.display = 'block';
+        });
+
+        
     </script>
 </body>
 </html>

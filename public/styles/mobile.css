@@ -67,24 +67,30 @@ p {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 5px rgb(255, 255, 255);
 }
+.mobileMenu {
+    display: block;
+    position: fixed;
+    left: 40vw;
+    z-index: 9999999999;
+}
 menu {
     position: fixed;
     display: none;
     justify-content: center;
-    vertical-align: top;
-    height: 2.5em;
-    margin-top: 1.5em;
-    margin-left: 2.5vw;
+    height: 100vh;
+    margin-top: 5.5em;
+    margin-left: 0vw;
     padding: 5px 0;
-    width: 73vw;
+    width: 100vw;
     z-index: 999;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px bisque;
 }
 #allIndex > menu > a {
+    display: block;
     text-decoration: none;
     text-transform: uppercase;
-    line-height: 2em;
+    line-height: 4em;
     transition-duration: 500ms;
     padding: 0 8px;
     margin: 0 10px;
