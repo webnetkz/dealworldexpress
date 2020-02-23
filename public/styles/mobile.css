@@ -1,3 +1,489 @@
 @media only screen and (max-width: 900px) and (min-width: 300px) {
-    
+    /* ALL INDEX STYLES */
+/*#################################################################*/
+/*#################################################################*/
+/*#################################################################*/
+#allIndex {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    width: 100vw;
+    margin-bottom: 5vh;
+    overflow-x: scroll;
+}
+p {
+    color: rgb(19, 55, 89);
+}
+.logoBg {
+    position: fixed;
+    left: 2vw;
+    top: 45vh;
+    height: 50vw;
+    opacity: 0.1;
+}
+.logo {
+    position: fixed;
+    left: 15px;
+    top: 3px;
+    z-index: 9999;
+    height: 5em;
+    transition-duration: 600ms;
+
+}
+.logo:hover {
+    transform: scale(1.2) rotate(15deg);
+    top: 10px;
+}
+.language {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    height: 2em;
+    background-color: rgb(19, 55, 89);
+    border-top-right-radius: 5px;
+    padding: 5px;
+    top: calc(100vh - 2em);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+}
+.lang {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 2px;
+    padding-bottom: 1px;
+    border-radius: 3px;
+    transition-duration: 800ms;
+}
+.lang:hover {
+    color: rgb(19, 55, 89);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+.activeLang {
+    color: rgb(19, 55, 89);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+menu {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    vertical-align: top;
+    height: 2.5em;
+    margin-top: 1.5em;
+    margin-left: 2.5vw;
+    padding: 5px 0;
+    width: 73vw;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px bisque;
+}
+#allIndex > menu > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 2em;
+    transition-duration: 500ms;
+    padding: 0 8px;
+    margin: 0 10px;
+    border-radius: 15px;
+    background-color: rgb(19, 55, 89);
+    color: rgb(255, 255, 255)
+}
+#allIndex > menu > a:hover {
+    box-shadow: 0 5px 15px rgb(55, 55, 55);
+    background-color: rgb(255, 255, 255);
+    color: rgb(19, 55, 89);
+}
+#allIndex > h1.header1 {
+    position: relative;
+    top: 20vh;
+    color: rgb(19, 55, 89);
+    font-weight: 100;
+    font-size: 2em;
+}
+#allIndex > h2 {
+    position: relative;
+    font-size: 1em;
+    font-weight: 100;
+    top: 25vh;
+    color: rgb(19, 55, 89); 
+}
+#tracking {
+    position: absolute;
+    top: 55vh;
+    left: 15vw;
+    height: 20vh;
+    width: 70vw;
+    z-index: 111;
+}
+#tracking > input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1.2em;
+    padding: 4px;
+    border-radius: 30px;
+    outline: none;
+    color: rgb(19, 55, 89);
+    text-align: center;
+    transition-duration: 500ms;
+    border: 2px solid rgb(255, 251, 7);
+}
+.inp {
+    border: 2px solid rgb(255, 251, 7);
+    background-color: rgb(255, 255, 230);
+    color: rgb(19, 55, 89);
+}
+select {
+    color: rgb(19, 55, 89);
+}
+.btn {
+    border: none;
+    background-color: rgb(255, 251, 7);
+}
+#tracking > input:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 5px black;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 55, 89);
+}
+#tracking > input:focus {
+    transform: scale(1.2);
+    box-shadow: 0 0 5px black;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 55, 89);
+}
+#calculator {
+    position: absolute;
+    top: 75vh;
+    left: 15vw;
+    height: 30vh;
+    width: 70vw;
+    z-index: 111;
+}
+#calculator > input, select {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1.2em;
+    padding: 4px;
+    border-radius: 30px;
+    outline: none;
+    color: rgb(19, 55, 89);
+    text-align: center;
+    transition-duration: 500ms;
+}
+#calculator > input:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 5px black;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 55, 89);
+}
+#calculator > input:focus {
+    transform: scale(1.2);
+    box-shadow: 0 0 5px black;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 55, 89);
+}
+.label {
+    color: rgb(19, 55, 89);
+}
+/* END ALL INDEX STYLES */
+/*#################################################################*/
+/*#################################################################*/
+/*#################################################################*/
+/* RIGHT NAVIGATION STYLES */
+
+#rightNavigation {
+    display: none;
+    background-color: rgb(19, 55, 89);
+    position: fixed;
+    left: 75vw;
+    top: 0;
+    height: 100vh;
+    width: 25vw;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    z-index: 9999;
+    overflow-y: auto;
+}
+.containerNavigation {
+    position: absolute;
+    animation: gg 30s infinite;
+    transition-duration: 1s;
+}
+.containerNavigation:hover {
+    animation: none;
+}
+.blockNavigation {
+    height: 25vh;
+    width: 23vw;
+    margin-left: 1vw;
+    margin-bottom: 10px;
+    transition-duration: 500ms;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+.blockNavigation:hover {
+    height: 35vh;
+    box-shadow: 0 0 3px rgb(0, 0, 0);
+}
+.containerNavigation:hover {
+    animation-play-state: paused;
+}
+@keyframes gg {
+    0% {
+        top: 10vh;
+    }
+    50% {
+        top: -50vh;
+    }
+    100% {
+        top: 10vh;
+    }
+}
+.navCalc {
+    height: 25vh;
+    background: url('../images/navigation/calc.jpg') no-repeat;
+    background-size: cover;
+}
+.navSave {
+    height: 25vh;
+    background: url('../images/navigation/save.png') 50% 50% no-repeat;
+    background-size: cover;
+}
+.navTarif {
+    height: 25vh;
+    background: url('../images/navigation/tarif.webp') 50% 50% no-repeat;
+    background-size: cover;
+}
+.navTrack {
+    height: 25vh;
+    background: url('../images/navigation/navTrack.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+.navDWE {
+    height: 25vh;
+    background: url('../images/navigation/navDWE.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+.navText {
+    position: relative;
+    text-decoration-line: none;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    width: 70%;
+    left: 30%;
+    top: 75%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 1px solid rgb(30, 136, 229);
+    text-transform: uppercase;
+}
+/* END RIGHT NAVIGATION STYLES */
+/*#################################################################*/
+/*#################################################################*/
+/*#################################################################*/
+/* FOOTER STYLES */
+footer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 75vw;
+    background-color: rgb(19, 55, 89);
+    height: 35vh;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+.footerBlock {
+    flex: 1;
+    padding: 10px;
+}
+.footerBlock > p {
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    margin-bottom: 1.5em;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.navItem {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 0.8em;
+    transition-duration: 500ms;
+    padding: 1px;
+}
+.navItem:hover {
+    color: rgb(19, 55, 89);
+    background-color: rgb(247, 247, 247);
+}
+.footerLogo {
+    text-align: center;
+    height: 8vh;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-top: 13vh;
+    margin-bottom: 2vh;
+    animation: footerLogo 5s infinite;
+}
+.footerContact {
+    line-height: 4vh;
+    text-align: left;
+    font-size: 0.8em;
+}
+.footerPhone {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.footerIcon {
+    vertical-align: middle;
+    margin-right: 5px;
+    height: 4vh;
+}
+.copyright {
+    color: rgb(255, 255, 255);
+    font-size: 0.7em;
+}
+@keyframes footerLogo {
+    0% {
+        margin-top: 13vh;
+    }
+    40% {
+        margin-top: 8vh;
+    }
+    60% {
+        margin-top: 13vh;
+    }
+    90% {
+        margin-top: 10vh;
+    }
+    100% {
+        margin-top: 13vh;
+    }
+}
+
+/* END FOOTER STYLES */
+/*#################################################################*/
+/*#################################################################*/
+/*#################################################################*/
+/* MODAL INFO STYLES */
+.zakaz {
+    position: absolute;
+    top: 119vh;
+    left: 22.5vw;
+    z-index: 0;
+    margin: 10px 0;
+    font-size: 1.4em;
+    padding: 9px;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: 0 0 5px black;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 55, 89);
+    text-align: center;
+    transition-duration: 500ms;
+}
+.zakaz:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px black;
+    border: 2px solid rgb(19, 55, 89);
+    color: rgb(19, 55, 89);
+    background-color: rgb(255, 255, 255);
+}
+#modalInfo {
+    position: absolute;
+    left: -100vw;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 5vw;
+    background-color: rgb(247, 247, 247);
+    z-index: 999999999999;
+    transition-duration: 500ms;
+}
+#modalInfo > h1 {
+    color: rgb(19, 55, 89);
+    margin-bottom: 2em;
+}
+.closeInfo {
+    position: absolute;
+    left: 3vw;
+    top: 1vh;
+    height: 64px;
+    width: 64px;
+    background: url('../images/back.png');
+}
+.closeInfo:hover {
+    cursor: pointer;
+}
+.oneZakaz {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+}
+.twoZakaz {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+}
+.inpInfo {
+    display: block;
+    margin: 4px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 3px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(30, 136, 229);
+    transition-duration: 700ms;
+}
+.inpInfo:focus {
+    box-shadow: 0 0 5px rgb(30, 136, 229);
+}
+/* END MODAL INFO STYLES */
+/*#################################################################*/
+/*#################################################################*/
+/*#################################################################*/
+/* CALLBACK BLOCK*/
+.callBackIcon {
+    position: fixed;
+    left: 0;
+    top: 80vh;
+    height: 3em;
+    padding: 3px;
+    background-color: rgb(255, 255, 255);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 0 10px black;
+    transition-duration: 600ms;
+    animation: phone 1s infinite;
+    z-index: 9999999999;    
+}
+.callBackIcon:hover {
+    animation: none;  
+    padding-left: 10px;
+    transform: scale(1.3);
+}
+@keyframes phone {
+    50% {
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 }

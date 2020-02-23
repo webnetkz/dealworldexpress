@@ -6,11 +6,19 @@
         let zakaz = document.getElementById('zakaz');
         zakaz.addEventListener('click', () => {
             modalInfo.style.left = '0px';
+            let btnZakaz = document.querySelector('.zakaz');
+            btnZakaz.style.display = 'none';
+            let infoCalc = document.querySelector('.infoCalc');
+            infoCalc.style.display = 'none';
         });
 
         let closeZakaz = document.querySelector('.closeInfo');
         closeZakaz.addEventListener('click', () => {
-            modalInfo.style.left = '-75vw';
+            modalInfo.style.left = '-100vw';
+            let btnZakaz = document.querySelector('.zakaz');
+            btnZakaz.style.display = 'block';
+            let infoCalc = document.querySelector('.infoCalc');
+            infoCalc.style.display = 'block';
         });
 
 

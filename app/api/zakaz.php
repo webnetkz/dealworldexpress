@@ -29,6 +29,9 @@ if( !empty($_POST['sendZakaz']) ) {
         $fromEmail = htmlspecialchars($_POST['fromEmail']);
         $fromEmail = trim($fromEmail);
 
+        $fromQID = htmlspecialchars($_POST['fromQID']);
+        $fromQID = trim($fromQID);
+
         // To data inputs
         $toCompany = htmlspecialchars($_POST['toCompany']);
         $toCompany = trim($toCompany);
@@ -67,12 +70,15 @@ curl_setopt($url, CURLOPT_POST, 1);
 curl_setopt($url, CURLOPT_RETURNTRANSFER, 1);
 
 // Генерация XML запроса на сервер
+$ord = '<order orderno="'.$fromQID.'">';
+
 $request = <<<XML
 <?xml version="1.0" encoding="UTF-8"?>
 <neworder newfolder="YES">
  <auth extra="290" login="fizz" pass="fiz123fiz"></auth>
  <order orderno="">
-   <barcode></barcode>
+
+   <barcode>$fromQID</barcode>
    <sender>
      <company>$fromCompany</company>
      <person>$fromFIO</person>
@@ -121,6 +127,7 @@ $request = <<<XML
  </order>
 </neworder>
 XML;
+
 
 // Настройка заголовков и отправка сообщения
 curl_setopt($url, CURLOPT_HTTPHEADER, 

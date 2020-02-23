@@ -62,7 +62,7 @@
             <label for="mass" class="hiddenText">mass</label>
             <input type="text" class="inp" name="mass" placeholder="Вес кг." id="mass" autocomplete="off">
             <p id="resCalc"></p>
-            <p>*Данный расчёт является ориентировочным.</p>
+            <p class="infoCalc">*Данный расчёт является ориентировочным.</p>
             <!--<p>Важно! Если объемный вес посылки превышает фактический в 2 раза и более, расчетный вес определяется по формуле: (объемный вес - фактический) / 2 + фактический вес. Данная формула просчета стоимости доставки распространяется на все виды доставки.</p>-->
         </form>
 
@@ -86,6 +86,7 @@
                         <input type="text" class="inpInfo" placeholder="Телефон отправителя" required name="fromPhone">
                         <input type="date" class="inpInfo" placeholder="Дата забора" required name="fromDate">
                         <input type="email" class="inpInfo" placeholder="E-mail" required name="fromEmail">
+                        <input type="text" class="inpInfo" placeholder="QiD" required name="fromQID">
                     </div>
                     <div class="twoZakaz">
                         <p>Получатель</p>

@@ -375,7 +375,7 @@ nav {
 /* MODAL INFO STYLES */
 .zakaz {
     position: absolute;
-    top: 70vh;
+    top: 75vh;
     left: 10vw;
     z-index: 111;
     margin: 10px 0;
