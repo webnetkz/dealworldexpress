@@ -320,7 +320,7 @@ footer {
     position: relative;
     width: 100vw;
     background-color: rgb(19, 55, 89);
-    height: 100vh;
+    height: 110vh;
     box-shadow: 0 0 10px rgb(0, 0, 0);
     box-sizing: border-box;
     top: 1300px;
@@ -404,7 +404,7 @@ nav {
 /* MODAL INFO STYLES */
 .zakaz {
     position: absolute;
-    top: 119vh;
+    top: 115vh;
     left: 22.5vw;
     z-index: 0;
     margin: 20px 0px;

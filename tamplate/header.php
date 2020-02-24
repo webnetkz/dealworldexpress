@@ -44,7 +44,7 @@
             <img src="public/images/newLogo.svg" alt="logotype deal world express" class="logo">
         </a>
         <div class="mobileMenu" onclick="handlerMenu();">
-            menu
+            МЕНЮ
         </div>
         <menu class="mobileCloseMenu">
             <a href="index" name="menuItem">Главная</a>
