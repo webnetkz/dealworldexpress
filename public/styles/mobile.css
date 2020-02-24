@@ -11,7 +11,7 @@
     box-sizing: border-box;
     width: 100vw;
     margin-bottom: 5vh;
-    overflow-x: scroll;
+    overflow-y: scroll;
     overflow-x: hidden;
     padding-bottom: 10px;
 }
@@ -430,9 +430,10 @@ nav {
     position: absolute;
     left: -100vw;
     top: 0;
-    height: 100vh;
+    height: 130vh;
     width: 100vw;
     box-sizing: border-box;
+    padding-top: 10vh;
     padding: 5vw;
     background-color: rgb(247, 247, 247);
     z-index: 999999999999;
@@ -440,12 +441,13 @@ nav {
 }
 #modalInfo > h1 {
     color: rgb(19, 55, 89);
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 .closeInfo {
     position: absolute;
     left: 3vw;
-    top: 1vh;
+    top: 2em;
     height: 64px;
     width: 64px;
     background: url('../images/back.png');

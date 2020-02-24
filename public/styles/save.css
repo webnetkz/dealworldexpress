@@ -55,7 +55,7 @@ hr {
 @media only screen and (max-width: 900px) and (min-width: 300px) {
     #allIndex {
         margin-bottom: 0;
-        padding-bottom: 5vh;
+        padding-bottom: 10vh;
     }
     footer {
         top: 0px;
