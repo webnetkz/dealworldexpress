@@ -42,5 +42,26 @@
     <script src="public/scripts/libs/calculator.js"></script>
     <script src="public/scripts/libs/trackingModal.js"></script>
 
+    <script>
+                // Отображение - скрытие меню
+                function handlerMenu() {
+            let menuX = document.querySelector('menu');
+            let menuClass = menuX.getAttribute('class');
+            let closeMenu = document.querySelector('.mobileMenu');
+            
+            // Проверка если меню открыто\закрыть
+            switch(menuClass) {
+                case 'mobileCloseMenu':
+                menuX.removeAttribute('class');
+                menuX.setAttribute('class', 'mobileOpenMenu');
+                break;
+
+                case 'mobileOpenMenu':
+                menuX.removeAttribute('class');
+                menuX.setAttribute('class', 'mobileCloseMenu');
+                break;
+            }
+        }
+    </script>
 </body>
 </html>

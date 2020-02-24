@@ -43,10 +43,10 @@
         <a href="index">
             <img src="public/images/newLogo.svg" alt="logotype deal world express" class="logo">
         </a>
-        <div class="mobileMenu">
+        <div class="mobileMenu" onclick="handlerMenu();">
             menu
         </div>
-        <menu>
+        <menu class="mobileCloseMenu">
             <a href="index" name="menuItem">Главная</a>
             <a href="tarif" name="menuItem">Тарифы и сроки</a>
             <a href="about" name="menuItem">О нас</a>

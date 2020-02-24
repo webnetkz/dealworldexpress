@@ -12,6 +12,7 @@
     width: 100vw;
     margin-bottom: 5vh;
     overflow-x: scroll;
+    overflow-x: hidden;
 }
 p {
     color: rgb(19, 55, 89);
@@ -70,21 +71,34 @@ p {
 .mobileMenu {
     display: block;
     position: fixed;
-    left: 40vw;
-    z-index: 9999999999;
+    left: 45vw;
+    font-size: 1.3em;
+    top: 3vh;
+    z-index: 999999999999999999999;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 136, 229);
+    border-radius: 5px;
+}
+.mobileCloseMenu {
+    left: calc(-100vw - 10px);
+}
+.mobileOpenMenu {
+    left: -10px;
 }
 menu {
     position: fixed;
-    display: none;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
+    left: -100vw;
     margin-top: 5.5em;
-    margin-left: 0vw;
     padding: 5px 0;
     width: 100vw;
     z-index: 999;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 10px bisque;
+    box-shadow: none;
+    transition-duration: 600ms;
 }
 #allIndex > menu > a {
     display: block;
@@ -301,15 +315,17 @@ footer {
     display: flex;
     justify-content: space-between;
     position: relative;
-    width: 75vw;
+    width: 100vw;
     background-color: rgb(19, 55, 89);
     height: 35vh;
     box-shadow: 0 0 10px rgb(0, 0, 0);
     box-sizing: border-box;
+    top: 1300px;
+    padding-left: 10px;
 }
 .footerBlock {
     flex: 1;
-    padding: 10px;
+    padding: 0px;
 }
 .footerBlock > p {
     color: rgb(255, 255, 255);

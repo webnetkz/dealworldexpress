@@ -33,12 +33,26 @@
 
 
 
-                 // 
-        let btnMobileMenu = document.querySelector('.mobileMenu');
-        btnMobileMenu.addEventListener('click', () => {
+        // Отображение - скрытие меню
+        function handlerMenu() {
             let menuX = document.querySelector('menu');
-            menuX.style.display = 'block';
-        });
+            let menuClass = menuX.getAttribute('class');
+            let closeMenu = document.querySelector('.mobileMenu');
+            
+            // Проверка если меню открыто\закрыть
+            switch(menuClass) {
+                case 'mobileCloseMenu':
+                menuX.removeAttribute('class');
+                menuX.setAttribute('class', 'mobileOpenMenu');
+                break;
+
+                case 'mobileOpenMenu':
+                menuX.removeAttribute('class');
+                menuX.setAttribute('class', 'mobileCloseMenu');
+                break;
+            }
+        }
+
 
         
     </script>

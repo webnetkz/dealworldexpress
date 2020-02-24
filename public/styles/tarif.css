@@ -41,6 +41,7 @@ h1 {
     color: rgb(19, 55, 89);
     font-weight: 100;
     margin-bottom: 2em;
+    margin-top: 1em;
 }
 h3 {
     color: rgb(19, 55, 89);
@@ -93,4 +94,59 @@ hr {
 }
 .textTarif {
     text-align: left;
+}
+@media only screen and (max-width: 900px) and (min-width: 300px) {
+    #tarif {
+        position: relative;
+        left: 0;
+        top: 0;
+        box-sizing: border-box;
+        width: 100vw;
+        margin-bottom: 5vh;
+    }
+    menu {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        left: -100vw;
+        margin-top: 5.5em;
+        padding: 5px 0;
+        width: 100vw;
+        z-index: 999;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 10px bisque;
+        transition-duration: 600ms;
+    }
+    #tarif > menu > a {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        line-height: 4em;
+        transition-duration: 500ms;
+        padding: 0 8px;
+        margin: 0 10px;
+        border-radius: 15px;
+        background-color: rgb(19, 55, 89);
+        color: rgb(255, 255, 255)
+    }
+    .containerCart {
+        height: 50vh;
+        padding: 20px;
+        margin-bottom: 2em;
+        padding-top: 200%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .cartSave {
+        border: 1px solid rgb(230, 216, 216);
+        height: 45vh;
+        width: 100%;
+        box-shadow: 0 0 5px rgb(150, 130, 130);
+        transition-duration: 500ms;
+        padding: 0px 5px;
+        margin: 20px 0px;
+        box-sizing: border-box;
+    }
 }
