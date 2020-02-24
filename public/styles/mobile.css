@@ -314,14 +314,16 @@ select {
 footer {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     position: relative;
     width: 100vw;
     background-color: rgb(19, 55, 89);
-    height: 40vh;
+    height: 90vh;
     box-shadow: 0 0 10px rgb(0, 0, 0);
     box-sizing: border-box;
     top: 1300px;
     padding-left: 10px;
+    padding-top: 20px;
 }
 .footerBlock {
     flex: 1;
@@ -335,7 +337,7 @@ footer {
 nav {
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
 }
 .navItem {
     color: rgb(255, 255, 255);
@@ -359,7 +361,7 @@ nav {
 }
 .footerContact {
     line-height: 4vh;
-    text-align: left;
+    text-align: center;
     font-size: 0.8em;
 }
 .footerPhone {
