@@ -110,12 +110,12 @@ hr {
         flex-direction: column;
         height: 100vh;
         left: -100vw;
-        margin-top: 5.5em;
+        margin-top: 0em;
         padding: 5px 0;
         width: 100vw;
         z-index: 999;
         background-color: rgb(255, 255, 255);
-        box-shadow: 0 0 10px bisque;
+        box-shadow: none;
         transition-duration: 600ms;
     }
     #tarif > menu > a {
@@ -124,8 +124,8 @@ hr {
         text-transform: uppercase;
         line-height: 4em;
         transition-duration: 500ms;
-        padding: 0 8px;
-        margin: 0 10px;
+        padding: 0 4px;
+        margin: 2px 10px;
         border-radius: 15px;
         background-color: rgb(19, 55, 89);
         color: rgb(255, 255, 255)

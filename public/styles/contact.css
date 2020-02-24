@@ -20,4 +20,14 @@
     footer {
         top: 20px;
     }
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .contactBlockX {
+        height: 35vh;
+        width: 100vw;
+        padding: 20px;
+        padding-top: 10vh;
+    }
 }
