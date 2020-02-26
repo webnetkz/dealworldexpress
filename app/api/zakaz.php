@@ -77,7 +77,7 @@ $request = <<<XML
 <neworder newfolder="YES">
  <auth extra="290" login="fizz" pass="fiz123fiz"></auth>
  <order orderno="">
-   <barcode>$fromQID</barcode>
+   <barcode></barcode>
    <sender>
      <company>$fromCompany</company>
      <person>$fromFIO</person>
@@ -117,7 +117,7 @@ $request = <<<XML
    <inshprice>$toPrice</inshprice>
    <receiverpays>NO</receiverpays>
    <enclosure>$toToItems</enclosure>
-   <instruction>Проверить при покупателе, подписать акт</instruction>
+   <instruction>$fromQID</instruction>
    <department>Отдел</department>
    <pickup>NO</pickup>
    <acceptpartially>NO</acceptpartially>
