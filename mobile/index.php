@@ -102,6 +102,7 @@
                     </p>
                 </form>
             </div>
+            <p style="position: relative; top: 110vh; visiblity: hidden;">.</p>
     </section>
 
 <?php

@@ -3,16 +3,24 @@
 /*#################################################################*/
 /*#################################################################*/
 /*#################################################################*/
+.hide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    z-index: 899;
+    background-color: rgb(247, 247, 247);
+}
 #allIndex {
     position: relative;
     left: 0;
     top: 0;
     height: 100vh;
     box-sizing: border-box;
-    width: 105vw;
+    width: 100vw;
     overflow-y: scroll;
     overflow-x: hidden;
-    padding-bottom: 2em;
     margin-bottom: 0;
 }
 p {
@@ -222,6 +230,10 @@ select {
 }
 .label {
     color: rgb(19, 55, 89);
+}
+.infoCalc {
+    text-align: left;
+    width: 100vw;
 }
 /* END ALL INDEX STYLES */
 /*#################################################################*/

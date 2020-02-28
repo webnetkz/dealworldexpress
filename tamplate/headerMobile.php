@@ -40,6 +40,7 @@
         <div class="mobileMenu" onclick="handlerMenu();">
             МЕНЮ
         </div>
+        <div class="hide"></div>
         <menu class="mobileCloseMenu">
             <a href="../index" name="menuItem">Главная</a>
             <a href="../tarif" name="menuItem">Тарифы и сроки</a>
