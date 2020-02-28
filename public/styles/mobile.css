@@ -157,10 +157,10 @@ menu {
     color: rgb(19, 55, 89);
     text-align: center;
     transition-duration: 500ms;
-    border: 2px solid rgb(255, 251, 7);
+    border: 2px solid rgb(2, 177, 255);
 }
 .inp {
-    border: 2px solid rgb(255, 251, 7);
+    border: 2px solid rgb(2, 177, 255);
     background-color: rgb(255, 255, 230);
     color: rgb(19, 55, 89);
     border-radius: 15px;
@@ -170,7 +170,7 @@ select {
 }
 .btn {
     border: none;
-    background-color: rgb(255, 251, 7);
+    background-color: rgb(2, 177, 255);
 }
 #tracking > input:hover {
     transform: scale(1.2);
