@@ -72,7 +72,7 @@ p {
 .mobileMenu {
     display: block;
     position: fixed;
-    left: 45vw;
+    left: 75vw;
     font-size: 1.3em;
     top: 3vh;
     z-index: 999999999999999999999;
@@ -82,10 +82,12 @@ p {
     border-radius: 5px;
 }
 .mobileCloseMenu {
+    padding-top: 100px;
     left: calc(-100vw - 10px);
 }
 .mobileOpenMenu {
-    left: -10px;
+    left: 0px;
+    padding-top: 100px;
 }
 menu {
     position: fixed;
@@ -111,7 +113,8 @@ menu {
     margin: 2px 10px;
     border-radius: 15px;
     background-color: rgb(19, 55, 89);
-    color: rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
 #allIndex > menu > a:hover {
     box-shadow: 0 5px 15px rgb(55, 55, 55);
@@ -120,7 +123,7 @@ menu {
 }
 #allIndex > h1.header1 {
     position: relative;
-    top: 20vh;
+    top: 10vh;
     color: rgb(19, 55, 89);
     font-weight: 100;
     font-size: 2em;
@@ -130,13 +133,14 @@ menu {
     position: relative;
     font-size: 1em;
     font-weight: 100;
-    top: 22vh;
+    top: 10vh;
     padding: 0 20px;
-    color: rgb(19, 55, 89); 
+    color: rgb(19, 55, 89);
+    text-align: center;
 }
 #tracking {
     position: absolute;
-    top: 55vh;
+    top: 45vh;
     left: 15vw;
     height: 20vh;
     width: 70vw;
@@ -184,7 +188,7 @@ select {
 }
 #calculator {
     position: absolute;
-    top: 75vh;
+    top: 65vh;
     left: 15vw;
     height: 30vh;
     width: 70vw;
@@ -406,7 +410,7 @@ nav {
 /* MODAL INFO STYLES */
 .zakaz {
     position: absolute;
-    top: 115vh;
+    top: 105vh;
     left: 22.5vw;
     z-index: 0;
     margin: 20px 0px;

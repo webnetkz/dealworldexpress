@@ -131,10 +131,10 @@ menu {
     color: rgb(19, 55, 89);
     text-align: center;
     transition-duration: 500ms;
-    border: 2px solid rgb(255, 251, 7);
+    border: 2px solid rgb(2, 177, 255);
 }
 .inp {
-    border: 2px solid rgb(255, 251, 7);
+    border: 2px solid rgb(2, 177, 255);
     background-color: rgb(255, 255, 230);
     color: rgb(19, 55, 89);
 }
@@ -143,7 +143,7 @@ select {
 }
 .btn {
     border: none;
-    background-color: rgb(255, 251, 7);
+    background-color: rgb(2, 177, 255);
 }
 #tracking > input:hover {
     transform: scale(1.2);
@@ -333,7 +333,6 @@ nav {
     border-radius: 50%;
     margin-top: 13vh;
     margin-bottom: 2vh;
-    animation: footerLogo 5s infinite;
 }
 .footerContact {
     line-height: 4vh;
@@ -352,23 +351,6 @@ nav {
 .copyright {
     color: rgb(255, 255, 255);
     font-size: 0.7em;
-}
-@keyframes footerLogo {
-    0% {
-        margin-top: 13vh;
-    }
-    40% {
-        margin-top: 8vh;
-    }
-    60% {
-        margin-top: 13vh;
-    }
-    90% {
-        margin-top: 10vh;
-    }
-    100% {
-        margin-top: 13vh;
-    }
 }
 
 /* END FOOTER STYLES */

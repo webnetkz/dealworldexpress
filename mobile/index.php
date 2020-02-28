@@ -3,8 +3,8 @@
     $title = 'DWE Грузоперевозки';
     $start = '<section id="allIndex">';
 
-    require_once 'tamplate/headerIndex.php';
-    require_once 'tamplate/navigation.php';
+    require_once '../tamplate/headerMobile.php';
+    require_once '../tamplate/navigation.php';
 
 ?>
         <style>
@@ -13,15 +13,11 @@
             }
         </style>
 
-        <!--<div class="callBack">
-            <img src="public/images/icons/contact.png" alt="phone icon" class="callBackIcon">
-        </div>-->
-
         <h1 class="header1">ЭКОНОМИЧНАЯ И НАДЕЖНАЯ ДОСТАВКА ИЗ КИТАЯ</h1>
         <h2>В РОССИЮ, КАЗАХСТАН, СТРАНЫ ЕС, АМЕРИКА И КАНАДА, УЗБЕКИСТАН И УКРАИНА</h2>
         <h2>ЛЮБОЙ ВЕС, ГАРАНТИЯ, В СРОК!</h2>
 
-        <form action="app/api/tracking" id="tracking" method="POST">
+        <form action="../app/api/tracking" id="tracking" method="POST">
         <label for="tracking" class="label">Отслеживание посылки</label>
             <label for="trackNum" class="hiddenText">trackNum</label>
             <input type="text" id="trackNum" class="inp" name="numberTracking" placeholder="Трек номер" required autocomplete="off">
@@ -109,5 +105,5 @@
     </section>
 
 <?php
-    require_once 'tamplate/footerIndex.php';
+    require_once '../tamplate/footerIndexMobile.php';
 ?>

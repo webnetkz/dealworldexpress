@@ -14,18 +14,21 @@ p {
 }
 .containerCart {
     height: 50vh;
-    padding: 20px;
+    padding: 0px;
+    width: 100vw;
     margin-bottom: 2em;
     display: flex;
     justify-content: space-around;
+    box-sizing: border-box;
 }
 .cartSave {
     border: 1px solid rgb(230, 216, 216);
     height: 45vh;
-    width: 18%;
+    width: 20%;
     box-shadow: 0 0 5px rgb(150, 130, 130);
     transition-duration: 500ms;
     padding: 20px 5px;
+    box-sizing: border-box;
 }
 .cartSave:hover {
     box-shadow: 0 0 15px rgb(150, 130, 130);

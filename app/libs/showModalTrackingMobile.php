@@ -1,6 +1,6 @@
 <?php
 
-@session_start();
+session_start();
 
 if(!empty($_SESSION['status'])) {
     switch($_SESSION['status']) {
@@ -85,7 +85,7 @@ if(!empty($_SESSION['status'])) {
 // Модальное окно данных по трек номеру
 if(!empty($_SESSION['tracking'])) {
     echo '<div class="modal">';
-        echo '<img src="public/images/close.svg" alt="close icon" class="closeBtn" onclick="closeModal();">';
+        echo '<img src="../public/images/close.svg" alt="close icon" class="closeBtn" onclick="closeModal();">';
         echo '<p class="trackNumber">Трек номер: ' . $_SESSION['tracking'] . '</p>';
             echo '<p class="headModalLine">Дата отправки — </p> ';
             echo '<p>' . $_SESSION['datefrom'] . ';</p><hr>';
