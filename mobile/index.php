@@ -29,6 +29,7 @@
             <label for="fromCount" class="hiddenText">from</label>
             <select autofocus name="from" class="inp" required id="fromCount">
                 <option value="">Откуда</option>
+                <option value="tr">Америка</option>
                 <option value="cn">Китай</option>
                 <option value="tr">Турция</option>
             </select>
@@ -36,8 +37,8 @@
             <select autofocus name="to" class="inp" required onchange="showCity(this);" id="toCount">
                 <option value="">Куда</option>
                 <option value="kz">Казахстан</option>
-                <option value="uz">Узбекистан</option>
                 <option value="kg">Киргизия</option>
+                <option value="uz">Узбекистан</option>
                 <option value="ru">Россия(Москва)</option>
             </select>
             <select autofocus name="KZ" class="inp" required style="display: none;" id="cityKZ">
