@@ -71,13 +71,22 @@ curl_setopt($url, CURLOPT_RETURNTRANSFER, 1);
 
 // Генерация XML запроса на сервер
 $ord = '<order orderno="'.$fromQID.'">';
+$rand = rand(0, 9);
+$rand += rand(0, 9);
+$rand += rand(0, 9);
+$rand += rand(0, 9);
+$rand += rand(0, 9);
+$rand += rand(0, 9);
+$rand += rand(0, 9);
+$rand += rand(0, 9);
+$rand += rand(0, 9);
 
 $request = <<<XML
 <?xml version="1.0" encoding="UTF-8"?>
 <neworder newfolder="YES">
  <auth extra="290" login="fizz" pass="fiz123fiz"></auth>
- <order orderno="">
-   <barcode></barcode>
+ $ord
+   <barcode>$rand</barcode>
    <sender>
      <company>$fromCompany</company>
      <person>$fromFIO</person>
@@ -150,7 +159,6 @@ $_SESSION['email'] = $fromEmail;
 
 
 require_once '../libs/mail.php';
-
 
 $_SESSION['msg'] = 'Ваш трек номер: ' . $_SESSION['t'] . '<br> Трек номер отправлен на указаную Вами почту.';
 header('Location: ../../index');

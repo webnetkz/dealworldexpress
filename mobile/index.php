@@ -68,7 +68,7 @@
                 <span class="closeInfo"></span>
                 <h1>Заявка на доставку</h1>
 
-                <form action="app/api/zakaz" method="POST">
+                <form action="../app/api/zakaz" method="POST">
                     <div class="oneZakaz">
                         <p>Отправитель</p>
                         <input type="text" class="inpInfo" placeholder="Компания отправитель" id="sendCompany" required name="fromCompany">
@@ -102,7 +102,6 @@
                     </p>
                 </form>
             </div>
-            <p style="position: relative; top: 110vh; visiblity: hidden;">.</p>
     </section>
 
 <?php

@@ -4,7 +4,7 @@
 
     require_once '../app/libs/showModalTrackingMobile.php';
 
-    require_once '../app/libs/showModalInfo.php';
+    require_once '../app/libs/showModalInfoMobile.php';
 
     if(empty($linkCSS)) {
         $linkCSS = null;
