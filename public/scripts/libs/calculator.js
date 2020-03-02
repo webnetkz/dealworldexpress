@@ -70,4 +70,33 @@ function showCity(elem) {
     } else {
         document.getElementById('cityUZ').style.display = 'none';
     }
+
+        // Если выбран Киргизия
+        if(elem.value == 'kg') {
+            document.getElementById('cityKG').style.display = 'block';
+            
+            // Выбор города доставки
+            cityKG.addEventListener('change', () => {
+                calcData.city = cityUZ.value;
+                
+                // Выбор массы посылки
+                mass.addEventListener('input', () => {
+    
+                    let resultCalc = mass.value * calcData.price;
+                    // Добавочная стоимость посылки 1.5$
+                    if(calcData.city != 2) {
+                        resultCalc = (mass.value * calcData.price) + 1.5;
+                        
+                        // Если вес выше 2кг
+                        if(mass.value > 2) {
+                            resultCalc = (mass.value * calcData.price) + 1.5 + ((mass.value - 2) / 2);  
+                        }
+                    }
+    
+                    resCalc.innerHTML = 'Стоимость: ' + resultCalc + '$';
+                });
+            });
+        } else {
+            document.getElementById('cityKG').style.display = 'none';
+        }
 }
