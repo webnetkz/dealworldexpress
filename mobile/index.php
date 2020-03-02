@@ -3,7 +3,6 @@
     $title = 'DWE Грузоперевозки';
 
     require_once '../tamplate/headerMobile.php';
-    require_once '../tamplate/navigation.php';
 
 ?>
         <style>
