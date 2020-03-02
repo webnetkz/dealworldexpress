@@ -225,7 +225,7 @@ select {
     color: rgb(19, 55, 89);
 }
 .infoCalc {
-    text-align: left;
+    text-align: center;
     width: 100vw;
     margin-left: -15vw;
 }
