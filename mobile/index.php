@@ -15,7 +15,7 @@
         <h2>В РОССИЮ, КАЗАХСТАН, СТРАНЫ ЕС, АМЕРИКА И КАНАДА, УЗБЕКИСТАН И УКРАИНА</h2>
         <h2>ЛЮБОЙ ВЕС, ГАРАНТИЯ, В СРОК!</h2>
 
-        <form action="../app/api/tracking" id="tracking" method="POST">
+        <form action="../app/api/trackingMobile" id="tracking" method="POST">
         <label for="tracking" class="label">Отслеживание посылки</label>
             <label for="trackNum" class="hiddenText">trackNum</label>
             <input type="text" id="trackNum" class="inp" name="numberTracking" placeholder="Трек номер" required autocomplete="off">
