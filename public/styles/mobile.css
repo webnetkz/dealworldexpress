@@ -13,7 +13,7 @@
     background-color: rgb(247, 247, 247);
 }
 body {
-    height: 1000px;
+    height: 900px;
     padding-top: 100px;
 }
 p {
@@ -227,6 +227,7 @@ select {
 .infoCalc {
     text-align: left;
     width: 100vw;
+    margin-left: -15vw;
 }
 /* END ALL INDEX STYLES */
 /*#################################################################*/
