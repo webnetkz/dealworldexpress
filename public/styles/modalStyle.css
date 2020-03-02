@@ -80,7 +80,7 @@
             opacity: 0;
         }
         100% {
-            top: 60%;
+            top: 40%;
             opacity: 1;
         }
     }
@@ -89,7 +89,7 @@
         color: rgb(40, 40, 50);
         position: absolute;
         box-sizing: border-box;
-        top: 60%;
+        top: 40%;
         left: 5vw;
         width: 90vw;
         transition-duration: 500ms;
