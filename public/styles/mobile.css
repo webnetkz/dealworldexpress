@@ -104,7 +104,7 @@ menu {
     box-shadow: none;
     transition-duration: 600ms;
 }
-#allIndex > menu > a {
+body > menu > a {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -117,12 +117,12 @@ menu {
     color: rgb(255, 255, 255);
     text-align: center;
 }
-#allIndex > menu > a:hover {
+body > menu > a:hover {
     box-shadow: 0 5px 15px rgb(55, 55, 55);
     background-color: rgb(255, 255, 255);
     color: rgb(19, 55, 89);
 }
-#allIndex > h1.header1 {
+body > h1.header1 {
     position: static;
     margin-top: 12vh;
     color: rgb(19, 55, 89);
@@ -130,7 +130,7 @@ menu {
     font-size: 2em;
     padding: 0px 20px;
 }
-#allIndex > h2 {
+body > h2 {
     position: static;
     font-size: 1em;
     font-weight: 100;
