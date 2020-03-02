@@ -1,7 +1,6 @@
 <?php
     // Variables
     $title = 'DWE Грузоперевозки';
-    $start = '<section id="allIndex">';
 
     require_once '../tamplate/headerMobile.php';
     require_once '../tamplate/navigation.php';
@@ -9,7 +8,7 @@
 ?>
         <style>
             html, body {
-                overflow: hidden;
+                overflow-x: hidden;
             }
         </style>
 
@@ -220,8 +219,47 @@
             <p class="infoCalc">*Данный расчёт является ориентировочным.</p>
             <!--<p>Важно! Если объемный вес посылки превышает фактический в 2 раза и более, расчетный вес определяется по формуле: (объемный вес - фактический) / 2 + фактический вес. Данная формула просчета стоимости доставки распространяется на все виды доставки.</p>-->
         </form>
+        <button name="zakaz" class="zakaz" id="zakaz">Заказать доставку</button>
+
+            <div id="modalInfo">
+                <span class="closeInfo"></span>
+                <h1>Заявка на доставку</h1>
+
+                <form action="app/api/zakaz" method="POST">
+                    <div class="oneZakaz">
+                        <p>Отправитель</p>
+                        <input type="text" class="inpInfo" placeholder="Компания отправитель" id="sendCompany" required name="fromCompany">
+                        <p>
+                            <input type="checkbox" name="fizLic" id="fizLic">
+                            Физическое лицо
+                        </p>
+                        <input type="text" class="inpInfo" placeholder="Контактное лицо отправителя" required name="fromFIO">
+                        <input type="text" class="inpInfo" placeholder="Город отправителя" required name="fromCity">
+                        <input type="text" class="inpInfo" placeholder="Адрес отправителя" required name="fromAdres">
+                        <input type="text" class="inpInfo" placeholder="Телефон отправителя" required name="fromPhone">
+                        <input type="date" class="inpInfo" placeholder="Дата забора" required name="fromDate">
+                        <input type="email" class="inpInfo" placeholder="E-mail" required name="fromEmail">
+                        <input type="text" class="inpInfo" placeholder="QiD" required name="fromQID">
+                    </div>
+                    <div class="twoZakaz">
+                        <p>Получатель</p>
+                        <input type="text" class="inpInfo" placeholder="Компания получатель" required name="toCompany">
+                        <input type="text" class="inpInfo" placeholder="Контактное лицо получателя" required name="toFIO">
+                        <input type="text" class="inpInfo" placeholder="Город получателя" required name="toCity">
+                        <input type="text" class="inpInfo" placeholder="Адрес получателя" required name="toAdres">
+                        <input type="text" class="inpInfo" placeholder="Телефон получателя" required name="toPhone">
+                        <input type="text" class="inpInfo" placeholder="Почтовый индекс" required name="toIndex">
+                        <input type="text" class="inpInfo" placeholder="Общий вес" required name="toMass">
+                        <input type="text" class="inpInfo" placeholder="Объявленная ценность" required name="toPrice">
+                        <input type="text" class="inpInfo" placeholder="Количество" required name="toItems">
+                        <input type="text" class="inpInfo" placeholder="Вложение" required name="toToItems">
+                    </div>
+                    <p>
+                        <input type="submit" class="zakaz" name="sendZakaz" value="Обработать заказ">
+                    </p>
+                </form>
             </div>
-    </section>
+    
 
 <?php
     require_once '../tamplate/footerIndexMobile.php';

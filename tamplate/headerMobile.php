@@ -32,8 +32,6 @@
     <title><?=$title?></title>
 </head>
 <body>
-
-    <?=$start?>
         <a href="index">
             <img src="../public/images/newLogo.svg" alt="logotype deal world express" class="logo">
         </a>
