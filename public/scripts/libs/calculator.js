@@ -115,7 +115,8 @@ function showCity(elem) {
 
                 let resultCalc = mass.value * calcData.price;
                 // Расчеты по первой зоне Россия
-                if((calcData.city != 171) && (calcData.city != 243)) {
+                // До 323 Моск.обл., после Ленин.обл.
+                if((calcData.city != 171) && (calcData.city != 243) && (calcData.city != 20) && (calcData.city != 47) && (calcData.city != 59) && (calcData.city != 59) && (calcData.city != 78) && (calcData.city != 79) && (calcData.city != 80) && (calcData.city != 82) && (calcData.city != 84) && (calcData.city != 93) && (calcData.city != 100) && (calcData.city != 124) && (calcData.city != 128) && (calcData.city != 157) && (calcData.city != 134) && (calcData.city != 155) && (calcData.city != 158) && (calcData.city != 174) && (calcData.city != 179) && (calcData.city != 203) && (calcData.city != 208) && (calcData.city != 214) && (calcData.city != 217) && (calcData.city != 223) && (calcData.city != 228) && (calcData.city != 230) && (calcData.city != 232) && (calcData.city != 252) && (calcData.city != 254) && (calcData.city != 261) && (calcData.city != 267) && (calcData.city != 301) && (calcData.city != 305) && (calcData.city != 314) && (calcData.city != 323) && (calcData.city != 61) && (calcData.city != 62) && (calcData.city != 65) && (calcData.city != 119) && (calcData.city != 255) && (calcData.city != 262) && (calcData.city != 275)) {
                     resultCalc = (mass.value * 11);
                 } else {
                     resultCalc = (mass.value * 10);
