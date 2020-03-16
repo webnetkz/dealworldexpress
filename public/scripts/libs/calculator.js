@@ -7,20 +7,28 @@ var calcData = {
 function selectCountryFrom(elem) {
     // Сброс выбора страны доставки
     document.getElementById('toCount').value = '';
-    // Сброс выбора города
+    // Сброс выбора города и цены и массы
     document.getElementById('cityKZ').style.display = 'none';
     document.getElementById('cityUZ').style.display = 'none';
     document.getElementById('cityRU').style.display = 'none';
+    resCalc.innerHTML = '';
+    mass.value = '';
 }
 
 // Выбор страны доставки
 function showCity(elem) {
     // Если выбран КЗ
     if(elem.value == 'kz') {
+        resCalc.innerHTML = '';
+        mass.value = '';
+
         document.getElementById('cityKZ').style.display = 'block';
         
         // Выбор города доставки
         cityKZ.addEventListener('change', () => {
+            resCalc.innerHTML = '';
+            mass.value = '';
+
             calcData.city = cityKZ.value;
             
             // Выбор массы посылки
@@ -46,10 +54,16 @@ function showCity(elem) {
 
     // Если выбран УЗБ
     if(elem.value == 'uz') {
+        resCalc.innerHTML = '';
+        mass.value = '';
+
         document.getElementById('cityUZ').style.display = 'block';
         
         // Выбор города доставки
         cityUZ.addEventListener('change', () => {
+            resCalc.innerHTML = '';
+            mass.value = '';
+
             calcData.city = cityUZ.value;
             
             // Выбор массы посылки
@@ -75,10 +89,16 @@ function showCity(elem) {
 
     // Если выбран Киргизия
     if(elem.value == 'kg') {
+        resCalc.innerHTML = '';
+        mass.value = '';
+
         document.getElementById('cityKG').style.display = 'block';
             
         // Выбор города доставки
         cityKG.addEventListener('change', () => {
+            resCalc.innerHTML = '';
+            mass.value = '';
+
             calcData.city = cityUZ.value;
                 
             // Выбор массы посылки
@@ -104,10 +124,16 @@ function showCity(elem) {
 
     // Если выбран Россия
     if(elem.value == 'ru') {
+        resCalc.innerHTML = '';
+        mass.value = '';
+
         document.getElementById('cityRU').style.display = 'block';
         
         // Выбор города доставки
         cityRU.addEventListener('change', () => {
+            resCalc.innerHTML = '';
+            mass.value = '';
+            
             calcData.city = cityRU.value;
             
             // Выбор массы посылки
