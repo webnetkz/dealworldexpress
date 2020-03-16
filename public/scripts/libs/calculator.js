@@ -10,6 +10,7 @@ function selectCountryFrom(elem) {
     // Сброс выбора города
     document.getElementById('cityKZ').style.display = 'none';
     document.getElementById('cityUZ').style.display = 'none';
+    document.getElementById('cityRU').style.display = 'none';
 }
 
 // Выбор страны доставки
@@ -42,6 +43,7 @@ function showCity(elem) {
     } else {
         document.getElementById('cityKZ').style.display = 'none';
     }
+
     // Если выбран УЗБ
     if(elem.value == 'uz') {
         document.getElementById('cityUZ').style.display = 'block';
@@ -112,14 +114,11 @@ function showCity(elem) {
             mass.addEventListener('input', () => {
 
                 let resultCalc = mass.value * calcData.price;
-                // Добавочная стоимость посылки 1.5$
-                if(calcData.city != 2) {
-                    resultCalc = (mass.value * calcData.price) + 1.5;
-                    
-                    // Если вес выше 2кг
-                    if(mass.value > 2) {
-                        resultCalc = (mass.value * calcData.price) + 1.5 + ((mass.value - 2) / 2);  
-                    }
+                // Расчеты по первой зоне Россия
+                if((calcData.city != 171) && (calcData.city != 243)) {
+                    resultCalc = (mass.value * 11);
+                } else {
+                    resultCalc = (mass.value * 10);
                 }
 
                 resCalc.innerHTML = 'Стоимость: ' + resultCalc + '$';
