@@ -44,7 +44,7 @@ if(!empty($xml->order)) {
     $_SESSION['tracking'] = (string)$xml->order['orderno'];
     $_SESSION['datefrom'] = (string)$xml->order->sender->date;
     $_SESSION['townfrom'] = (string)$xml->order->sender->town;
-    $_SESSION['dateto'] = (string)$xml->order->receiver->date;
+    //$_SESSION['dateto'] = (string)$xml->order->receiver->date;
     $_SESSION['townto'] = (string)$xml->order->receiver->town;
     $_SESSION['mass'] = (string)$xml->order->weight;
     $_SESSION['mest'] = (string)$xml->order->quantity;

@@ -93,8 +93,8 @@ if(!empty($_SESSION['tracking'])) {
         echo '<p class="headModalLine">Город отправки — </p> ';
         echo '<p>' . $_SESSION['townfrom'] . ';</p><hr>';
 
-        echo '<p class="headModalLine">Дата доставки — </p> ';
-        echo '<p>' . $_SESSION['dateto'] . ';</p><hr>';
+        //echo '<p class="headModalLine">Дата доставки — </p> ';
+        //echo '<p>' . $_SESSION['dateto'] . ';</p><hr>';
 
         echo '<p class="headModalLine">Город доставки — </p> ';
         echo '<p>' . $_SESSION['townto'] . ';</p><hr>';
