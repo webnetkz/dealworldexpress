@@ -70,23 +70,13 @@ curl_setopt($url, CURLOPT_POST, 1);
 curl_setopt($url, CURLOPT_RETURNTRANSFER, 1);
 
 // Генерация XML запроса на сервер
-$ord = '<order orderno="'.$fromQID.'">';
-$rand = rand(0, 9);
-$rand += rand(0, 9);
-$rand += rand(0, 9);
-$rand += rand(0, 9);
-$rand += rand(0, 9);
-$rand += rand(0, 9);
-$rand += rand(0, 9);
-$rand += rand(0, 9);
-$rand += rand(0, 9);
 
 $request = <<<XML
 <?xml version="1.0" encoding="UTF-8"?>
 <neworder newfolder="YES">
  <auth extra="290" login="fizz" pass="fiz123fiz"></auth>
- $ord
-   <barcode>$rand</barcode>
+ <order orderno="">
+   <barcode></barcode>
    <sender>
      <company>$fromCompany</company>
      <person>$fromFIO</person>

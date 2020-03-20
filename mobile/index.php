@@ -556,7 +556,7 @@
                         <input type="text" class="inpInfo" placeholder="Телефон отправителя" required name="fromPhone">
                         <input type="date" class="inpInfo" placeholder="Дата забора" required name="fromDate">
                         <input type="email" class="inpInfo" placeholder="E-mail" required name="fromEmail">
-                        <input type="text" class="inpInfo" placeholder="QiD" required name="fromQID">
+                        <input type="text" class="inpInfo" placeholder="Трек номер по Китаю" name="fromQID">
                     </div>
                     <div class="twoZakaz">
                         <p>Получатель</p>
