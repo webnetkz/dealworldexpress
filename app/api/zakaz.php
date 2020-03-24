@@ -75,7 +75,7 @@ $request = <<<XML
 <?xml version="1.0" encoding="UTF-8"?>
 <neworder newfolder="YES">
  <auth extra="290" login="fizz" pass="fiz123fiz"></auth>
- <order orderno="">
+ <order orderno="0">
    <barcode></barcode>
    <sender>
      <company>$fromCompany</company>
