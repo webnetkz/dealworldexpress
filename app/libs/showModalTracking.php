@@ -8,7 +8,7 @@ if(!empty($_SESSION['status'])) {
             $_SESSION['status'] = 'Ожидает синхронизации. Данные заказа пока не появились в бэкофисе';
         break;
         case 'NEW':
-            $_SESSION['status'] = 'Новый';
+            $_SESSION['status'] = 'На складе в Китае';
         break;
         case 'PICKUP':
             $_SESSION['status'] = 'Забран у отправителя';
